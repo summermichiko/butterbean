@@ -1,0 +1,176 @@
+<header>
+	<section class="hero">
+		<img ng-src="../assets/images/butterbean-white-logo.png">
+		<div class="container">
+		  <div class="row">
+		    <div class="col-md-8 col-md-offset-2 text-center inner">
+		      <h1 class="main-header">Discover amazing activities 
+				<br>
+		      	with your kids.</h1>
+		      <a href="/signup" class="top-link">Join today</a>
+		      <a href="/login" class="bottom-link">(or Sign In)</a>
+		    </div>
+		  </div>
+		</div>
+	</section>
+</header>
+<section class="icons">
+  <div class="container">
+	  <div class="col-md-12">
+	    <h1 class="section-header">Find In-Depth Profiles</h1>
+	    <div>
+
+	      <div class="col-md-2 icon-list">
+	        <div>
+	          <i><img ng-src="../assets/images/school-icon-circle.png"></i>
+	        </div>
+	        <h2>Schools</h2>
+	        <p>Preschools, Elementary, Middle and High Schools.</p>
+	      </div>
+
+	      <div class="col-md-2 icon-list">
+	        <div>
+	          <i><img ng-src="../assets/images/active-icon-circle.png"></i>
+	        </div>
+	        <h2>Outdoor + Active</h2>
+	        <p>Hikes, Beachs, Parks and Paid Attractions.</p>
+	      </div>
+
+	      <div class="col-md-2 icon-list">
+	        <div>
+	          <i><img ng-src="../assets/images/food-icon-circle.png"></i>
+	        </div>
+	        <h2>Food</h2>
+	        <p>Restaurants, Bakeries, and Food Trucks.</p>
+	      </div>
+
+	      <div class="col-md-2 icon-list">
+	        <div>
+	          <i><img ng-src="../assets/images/music-icon-circle.png"></i>
+	        </div>
+	        <h2>Enrichment + Learning</h2>
+	        <p>Sports, Language, and Music Programs.</p>
+	      </div>
+
+	      <div class="col-md-2 icon-list">
+	        <div>
+	          <i><img ng-src="../assets/images/museum-icon-circle.png"></i>
+	        </div>
+	        <h2>Culture + History</h2>
+	        <p>Museums, Animal Exhibits, Cultural Activities.</p>
+	      </div>
+
+	      <div class="col-md-2 icon-list">
+	        <div>
+				<i><img ng-src="../assets/images/health-icon-circle.png"></i>
+	        </div>
+	        <h2>Health + Wellness</h2>
+	        <p>Pediatricians, Dentists, Therapists, and Health Services.</p>
+	      </div>
+
+	      <div class="clearfix"></div>
+	    </div>
+	  </div>
+  </div>
+</section>
+<section class="video-pattern">
+  <!-- <div class="video-container">
+	<img class="left-video" src="../assets/images/hero-image.png">
+	<img class="mid-video" src="../assets/images/hero-image.png">
+	<img class="right-video" src="../assets/images/hero-image.png">
+  </div> -->
+  <div class="container video-section">
+  	<h1 class="section-header">More Than Just Facts and Figures</h1>
+  	<p>Students thrive under a teacher who really cares. Food tastes better when served with a warm smile. We work hard to spotlight more than the dry numbers, but the people that make up our featured organizations. Example spotlights:</p>
+  	<!-- <iframe width="853" height="480" src="//www.youtube.com/embed/zTPRBnCm12M" frameborder="0" allowfullscreen></iframe> -->
+	<div ng-controller="MainCtrl">
+	  <div>
+	    <carousel interval="myInterval">
+	      <slide ng-repeat="slide in slides" active="slide.active" style="height: 400px" ng-click="/signup">
+	        <img ng-src="{{slide.image}}" style="margin:auto;">
+	        <div class="carousel-caption">
+	          <p>{{slide.text}}</p>
+	        </div>
+	      </slide>
+	    </carousel>
+	  </div>
+	</div>
+  </div>
+
+</section>
+<section class="tips">
+  <div class="container">
+    <div class="row">
+       <h1 class="section-header">Insider Tips From Local Parents</h1>
+
+		<a ng-href="http://butterbeanapp.tumblr.com/post/98189446810/ultimate-shaved-ice-guide" target="_blank" class="col-md-4 suggestionSec">
+			<div class="img1"></div>
+			<div class="suggestionNameHolder">
+				<p>7 Delightfully Clever DIY Birthday Party Favors</p>
+			</div>
+		</a>
+
+		<a ng-href="http://butterbeanapp.tumblr.com/post/98189468610/16-birthday-cupcake-alternatives" target="_blank" class="col-md-4 suggestionSec">
+			<div class="img2"></div>
+			<div class="suggestionNameHolder">
+				<p>Ultimate Shaved Ice Guide</p>
+			</div>
+		</a>
+
+		<a ng-href="http://butterbeanapp.tumblr.com/post/98186633430/7-delightfully-clever-diy-birthday-party-favors" target="_blank" class="col-md-4 suggestionSec">
+			<div class="img3"></div>
+			<div class="suggestionNameHolder">
+				<p>16 Birthday Cupcake Alternatives</p>
+			</div>
+		</a>
+
+	</div>
+  </div>
+</section>
+<section class="bottom-btn-section">
+	<div class="container">
+		<h1>Start Exploring. Become a Member.</h1>
+		<a href="/signup">Sign Up</a>
+	</div>
+</section>
+<section class="darker-yellow"></section>
+<section>
+	<footer class="col-md-12">
+	<div class="container">
+		<div class="col-md-6">
+			<img src="../assets/images/butterbean-white-logo.png">
+			<p>&copy; Copyright 2014</p>
+		</div>
+		<div class="col-md-2">
+			<h2>Company</h2>
+			<ul>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Jobs</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Terms & Privacy</a></li>
+			</ul>
+		</div>
+		<div class="col-md-2">
+			<h2>Contribute</h2>
+			<ul>
+				<li><a href="#">Suggest an Activty</a></li>
+				<li><a href="#">Advertise With Us</a></li>
+				<li><a href="#">Feedback</a></li>
+			</ul>
+		</div>
+		<div class="col-md-2">
+			<h2>Connect</h2>
+			<ul>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Pinterest</a></li>
+			</ul>
+		</div>
+	</div>
+	</footer>
+</section>
+
+
+
+
+

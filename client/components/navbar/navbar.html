@@ -1,0 +1,142 @@
+<div class="navbar navbar-default navbar-static-top" ng-controller="NavbarCtrl" ng-show="isLoggedIn()">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" ng-click="isCollapsed = !isCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/planner" class="navbar-brand"><img ng-src="../assets/images/butterbean-yellow-logo.png"></a>
+    </div>
+    <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li ng-show="isLoggedIn()" ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
+            <a ng-href="{{item.link}}">{{ item.title }}</a>
+        </li>
+        <li class="navbar-left1" ng-show="isAdmin()" ng-class="{active: isActive('/admin')}"><a href="/admin">Accounts</a></li>
+
+        <li class="navbar-left2" ng-show="isAdmin()" ng-controller="AddItemCtrl" ng-click="open('addItem.html')">Add Item<a href=""></a></li>
+        <div>
+          <script type="text/ng-template" id="addItem.html">
+            <div class="modal-header">
+                <h3 class="modal-title">Create An Item</h3>
+            </div>
+            <div class="modal-body">
+                <form name="addItemForm" ng-submit="addItem()" class="simple-form">
+                  <div>
+                      Name: <input name="name" type="text" ng-model="formObj.name" required>
+                      <p ng-show="addItemForm.name.$error.required && addItemForm.name.$dirty" class="errorMessage">*A name is required.</p>
+                  </div>
+                  <div>
+                      Yelp Name: <input type="text" ng-model="formObj.yelpName">
+                  </div>
+                  <div>
+                      Image: <input type="text" ng-model="formObj.image">
+                  </div>
+                  <div>
+                      Category:
+                      <select name="category" type="text" ng-model="formObj.category" required>
+                        <option>schools</option>
+                        <option>enrichments</option>
+                        <option>funs</option>
+                        <option>foods</option>
+                      </select>
+                      <p ng-show="addItemForm.category.$error.required && addItemForm.category" class="errorMessage">*A category is required.</p>
+                  </div>
+                  <div>
+                      Address: <input name="address" type="text" ng-model="formObj.address" required>
+                      <p ng-show="addItemForm.address.$error.required && addItemForm.address" class="errorMessage">*An address is required.</p>
+                  </div>
+                  <div>
+                      Website: <input type="text" ng-model="formObj.website">
+                  </div>
+                  <div>
+                      Grade Levels: <input type="text" ng-model="formObj.gradeLevels">
+                  </div>
+                  <div>
+                      Enrollment: <input type="number" name="enrollment" ng-model="formObj.enrollment">
+                  </div>
+                  <div>
+                      Boarding: <input type="text" ng-model="formObj.boarding">
+                  </div>
+                  <div>
+                      Gender: 
+                      <select type="text" ng-model="formObj.gender">
+                        <option>Co-ed</option>
+                        <option>Boys Only</option>
+                        <option>Girls Only</option>
+                      </select>
+                  </div>
+                  <div>
+                      Religion: <input type="text" ng-model="formObj.religion">
+                  </div>
+                  <div>
+                      Town Filter: <input type="text" ng-model="formObj.town">
+                  </div>
+                  <div>
+                      Student Filter: <input type="text" ng-model="formObj.student">
+                  </div>
+                  <div>
+                      City: <input type="text" ng-model="formObj.city">
+                  </div>
+                  <div>
+                      Write Up: <textarea rows="10" ng-model="formObj.writeUp"></textarea>
+                  </div>
+                  <div>
+                      Logo: <input type="text" ng-model="formObj.logo">
+                  </div>
+                  <input type="submit" value="Create">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+            </div>
+          </script>
+        </div>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/signup')}"><a href="/signup">Sign up</a></li>
+        <li ng-hide="isLoggedIn()" ng-class="{active: isActive('/login')}"><a href="/login">Login</a></li>
+        <li ng-show="isLoggedIn()" ng-hide="isAdmin()"><p class="navbar-text">{{ getCurrentUser().name }}</p></li>
+        <li ng-show="isLoggedIn()" ng-controller="BookmarkListCtrl" ng-click="open('bookmarkList.html')"><a href="">Bookmarks</a></li>
+        <div>
+          <script type="text/ng-template" id="bookmarkList.html">
+            <div class="modal-header">
+                <h3 class="modal-title">Your Bookmark List</h3>
+                <div class="cancelBtn">
+                  <img ng-src="../assets/images/x.png" ng-click="cancel()"></button>
+                </div>            
+            </div>
+            <div class="modal-body">
+              <div ng-repeat="bookmark in bookmarks track by $index"> 
+              <a ng-href="/individualTemplate/{{bookmark.category}}/{{bookmark._id}}">
+                <img ng-src="{{bookmark.image}}" alt="">
+                <div class="modalText">
+                  <div class="btn deleteListBtn">
+                    <img ng-src="../assets/images/trash-can.png" ng-click="delete(bookmark, $index)"></button>
+                  </div>  
+                  <p class="modalName1">{{bookmark.name}}</p>
+                  <p class="modalCity">{{bookmark.city}}</p>
+                </div>
+                </a>
+              </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </script>
+        </div>
+        <li ng-show="isLoggedIn()" ng-class="{active: isActive('/settings')}"><a href="/settings">Settings</a></li>
+        <li ng-show="isLoggedIn()" ng-class="{active: isActive('/logout')}"><a href="" ng-click="logout()">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+

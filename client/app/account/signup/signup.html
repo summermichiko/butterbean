@@ -1,0 +1,76 @@
+<div class="container">
+  <div class="topLeftLogo"><img src="../assets/images/butterbean-yellow-logo.png"></div>
+
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <a class="btn btn-facebook col-md-4" href="" ng-click="loginOauth('facebook')">
+          <i class="fa fa-facebook"></i> Sign up with Facebook
+        </a>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4"></div>
+        <a class="btn btn-google-plus col-md-4" href="" ng-click="loginOauth('google')">
+          <i class="fa fa-google-plus"></i> Sign up with Google+
+        </a>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4"></div>
+        <a class="btn btn-twitter col-md-4" href="" ng-click="loginOauth('twitter')">
+          <i class="fa fa-twitter"></i> Sign up with Twitter
+        </a>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 orLine">
+          <p>OR</p>
+        </div>
+      </div>
+
+      <form class="form" name="form" ng-submit="register(form)" novalidate>
+
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4" ng-class="{ 'has-success': form.name.$valid && submitted, 'has-error': form.name.$invalid && submitted }">
+            <input type="text" name="name" class="form-control" ng-model="user.name" placeholder="Name" required/>
+            <p class="help-block" ng-show="form.name.$error.required && submitted">*A name is required.</p>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4" ng-class="{ 'has-success': form.email.$valid && submitted, 'has-error': form.email.$invalid && submitted }">
+            <input type="email" name="email" class="form-control" ng-model="user.email" placeholder="Email" required mongoose-error/>
+            <p class="help-block" ng-show="form.email.$error.email && submitted">*Enter a valid email.</p>
+            <p class="help-block" ng-show="form.email.$error.required && submitted">*Enter an email address.</p>
+            <p class="help-block" ng-show="form.email.$error.mongoose">{{ errors.email }}</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4"></div>
+          <div class="form-group col-md-4" ng-class="{ 'has-success': form.password.$valid && submitted, 'has-error': form.password.$invalid && submitted }">
+            <input type="password" name="password" class="form-control" ng-model="user.password" placeholder="Password" ng-minlength="3" required mongoose-error/>
+            <p class="help-block" ng-show="(form.password.$error.minlength || form.password.$error.required) && submitted">*Your password must be at least 3 characters.</p>
+            <p class="help-block" ng-show="form.password.$error.mongoose">{{ errors.password }}</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4"></div>
+            <button class="btn btn-inverse btn-lg btn-signup" type="submit">Sign Up</button>
+        </div>
+
+        <div class="alreadyMemberSection">
+          <div class="col-md-4"></div>
+            <p>Already a Butterbean Member?</p>
+            <a href="/login">Login</a>
+        </div>
+
+      </form>
+      </div>
+    </div>
+</div>

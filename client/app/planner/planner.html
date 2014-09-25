@@ -1,0 +1,444 @@
+<section>
+	<div class="tabs">
+		<ul class="categoryMenu container">
+			<li class="icon" ng-click="showItems('schools')"><img src="../assets/images/school-icon.png">Schools</li>
+			<li class="icon" ng-click="showItems('actives')"><img src="../assets/images/bike-icon.png">Outdoor + Active</li>
+			<li class="icon" ng-click="showItems('foods')"><img src="../assets/images/food-icon.png">Food</li>
+			<li class="icon" ng-click="showItems('enrichments')"><img src="../assets/images/music-icon.png">Enrichment + Learning</li>
+			<li class="icon" ng-click="showItems('cultures')"><img src="../assets/images/museum-icon.png">Culture + History</li>
+			<li class="icon" ng-click="showItems('healths')"><img src="../assets/images/health-icon.png">Health + Wellness</li>
+		</ul>
+	</div><!-- /tabs -->
+</section>
+
+<div id="top" ng-show="show.schools">
+	<div class="main clearfix">
+		<form class="nl-form container">
+			I'm looking for a private school in 
+			<select ng-model="search.town" class="selectpicker">
+				<option>any town</option>
+				<option>Aiea</option>
+				<option>Ewa Beach</option>
+				<option>Haleiwa</option>
+				<option>Hauula</option>
+				<option>Hawaii Kai</option>
+				<option selected>Honolulu</option>
+				<option>Kaaawa</option>
+				<option>Kakaako</option>
+				<option>Kahala</option>
+				<option>Kahuku</option>
+				<option>Kailua</option>
+				<option>Kaneohe</option>
+				<option>Kapolei</option>
+				<option>Laie</option>
+				<option>Maiili</option>
+				<option>Makaha</option>
+				<option>Manoa</option>
+				<option>Mililani</option>
+				<option>Nanakuli</option>
+				<option>Pearl City</option>
+				<option>Wahiawa</option>
+				<option>Waialua</option>
+				<option>Waianae</option>
+				<option>Waikiki</option>
+				<option>Waimanalo</option>
+				<option>Waipahu</option>
+				<option>Island Wide</option>
+			</select>
+			for my
+			<select ng-model="search.student" class="selectpicker">
+				<option selected>preschooler</option>
+				<option>elementary student</option>
+				<option>middle schooler</option>
+				<option>high schooler</option>
+			</select>
+			. 
+			<div class="nl-overlay"></div>
+		</form>
+	</div>
+
+	<div class="container">
+		<div class="col-md-4 listSec" ng-repeat="school in data.schools | filter:search:strict">
+			<div class="testSec">
+				<a ng-href="individualTemplate/schools/{{ school._id }}" target="_blank">
+					<img ng-src="{{ school.image }}" class="itemPic" alt="">
+					<div class="nameHolder">
+						<p class="itemHeader">{{ school.name }}</p>
+						<p class="itemCity">({{ school.city }})</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div ng-show="show.actives">
+	<div class="main clearfix">
+		<form id="nl-form" class="nl-form container">
+			I'm looking for a family-friendly
+			<select>
+				<option selected>beach</option>
+				<option>hike</option>
+				<option>park</option>
+				<option>paid attraction</option>
+			</select>
+			in 
+			<select>
+				<option>Aiea</option>
+				<option>Ewa</option>
+				<option>Haleiwa</option>
+				<option>Hauula</option>
+				<option>Hawaii Kai</option>
+				<option selected>Honolulu</option>
+				<option>Kaaawa</option>
+				<option>Kakaako</option>
+				<option>Kahala</option>
+				<option>Kahuku</option>
+				<option>Kailua</option>
+				<option>Kaneohe</option>
+				<option>Kapolei</option>
+				<option>Laie</option>
+				<option>Lanikai</option>
+				<option>Maiili</option>
+				<option>Makaha</option>
+				<option>Manoa</option>
+				<option>Mililani</option>
+				<option>Nanakuli</option>
+				<option>Pearl City</option>
+				<option>Wahiawa</option>
+				<option>Waialua</option>
+				<option>Waianae</option>
+				<option>Waikiki</option>
+				<option>Waimanalo</option>
+				<option>Waipahu</option>
+				<option>Island Wide</option>
+			</select>
+			.
+			<div class="nl-overlay"></div>
+		</form>
+	</div>
+
+	<div class="container">
+		<div class="col-md-4 listSec" ng-repeat="active in data.actives">
+			<div class="testSec">
+				<a ng-href="individualTemplate/actives/{{ active._id }}" target="_blank">
+					<img ng-src="{{ active.image }}" class="itemPic" alt="">
+					<div class="nameHolder">
+						<p class="itemHeader">{{ active.name }}</p>
+						<p class="itemCity">{{ active.city }}</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div ng-show="show.foods">
+	<div class="main clearfix">
+		<form id="nl-form" class="nl-form container">
+			I'm looking for a family-friendly
+			<select>
+				<option selected>Japanese</option>
+				<option>cuisine</option>
+				<option>cuisine</option>
+				<option>cuisine</option>
+				<option>cuisine</option>
+				<option>cuisine</option>
+				<option>cuisine</option>
+				<option>cuisine</option>
+				<option>cuisine</option>
+				<option>cuisine</option>
+				<option>cuisine</option>
+				<option>cuisine</option>
+				<option>cuisine</option>
+				<option>cuisine</option>
+				<option>cuisine</option>
+				<option>cuisine</option>
+			</select>
+			place in 
+			<select>
+				<option>Aiea</option>
+				<option>Ewa</option>
+				<option>Haleiwa</option>
+				<option>Hauula</option>
+				<option>Hawaii Kai</option>
+				<option selected>Honolulu</option>
+				<option>Kaaawa</option>
+				<option>Kakaako</option>
+				<option>Kahala</option>
+				<option>Kahuku</option>
+				<option>Kailua</option>
+				<option>Kaneohe</option>
+				<option>Kapolei</option>
+				<option>Laie</option>
+				<option>Lanikai</option>
+				<option>Maiili</option>
+				<option>Makaha</option>
+				<option>Manoa</option>
+				<option>Mililani</option>
+				<option>Nanakuli</option>
+				<option>Pearl City</option>
+				<option>Wahiawa</option>
+				<option>Waialua</option>
+				<option>Waianae</option>
+				<option>Waikiki</option>
+				<option>Waimanalo</option>
+				<option>Waipahu</option>
+				<option>Island Wide</option>
+			</select>
+			.
+			<div class="nl-overlay"></div>
+		</form>
+	</div>
+
+	<div class="container">
+		<div class="col-md-4 listSec" ng-repeat="food in data.foods">
+			<div class="testSec">
+				<a ng-href="individualTemplate/foods/{{ food._id }}" target="_blank">
+					<img ng-src="{{ food.image }}" class="itemPic" alt="">
+					<div class="nameHolder">
+						<p class="itemHeader">{{ food.name }}</p>
+						<p class="itemCity">{{ food.city }}</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div ng-show="show.enrichments">
+	<div class="main clearfix">
+		<form id="nl-form" class="nl-form container">
+			I'm looking for 
+			<select>
+				<option selected>sports activities</option>
+				<option>language lessons</option>
+				<option>music lessons</option>
+				<option>tutoring</option>
+			</select>
+			in 
+			<select>
+				<option>Aiea</option>
+				<option>Ewa</option>
+				<option>Haleiwa</option>
+				<option>Hauula</option>
+				<option>Hawaii Kai</option>
+				<option selected>Honolulu</option>
+				<option>Kaaawa</option>
+				<option>Kakaako</option>
+				<option>Kahala</option>
+				<option>Kahuku</option>
+				<option>Kailua</option>
+				<option>Kaneohe</option>
+				<option>Kapolei</option>
+				<option>Laie</option>
+				<option>Lanikai</option>
+				<option>Maiili</option>
+				<option>Makaha</option>
+				<option>Manoa</option>
+				<option>Mililani</option>
+				<option>Nanakuli</option>
+				<option>Pearl City</option>
+				<option>Wahiawa</option>
+				<option>Waialua</option>
+				<option>Waianae</option>
+				<option>Waikiki</option>
+				<option>Waimanalo</option>
+				<option>Waipahu</option>
+				<option>Island Wide</option>
+			</select>
+			for my
+			<select>
+				<option selected>preschooler</option>
+				<option>elementary student</option>
+				<option>middle schooler</option>
+				<option>high schooler</option>
+			</select>
+			. 
+			<div class="nl-overlay"></div>
+		</form>
+	</div>
+	<div class="container">
+		<div class="col-md-4 listSec" ng-repeat="enrichment in data.enrichments">
+			<div class="testSec">
+				<a ng-href="individualTemplate/enrichments/{{ enrichment._id }}" target="_blank">
+					<img ng-src="{{ enrichment.image }}" class="itemPic" alt="">
+					<div class="nameHolder">
+						<p class="itemHeader">{{ enrichment.name }}</p>
+						<p class="itemCity">{{ enrichment.city }}</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div ng-show="show.cultures">
+	<div class="main clearfix">
+		<form id="nl-form" class="nl-form class container">
+			I'm looking for
+			<select>
+				<option>museums</option>
+				<option>animal exhibits</option>
+				<option>cultural sites</option>
+			</select>
+			in 
+			<select>
+				<option>Aiea</option>
+				<option>Ewa</option>
+				<option>Haleiwa</option>
+				<option>Hauula</option>
+				<option>Hawaii Kai</option>
+				<option selected>Honolulu</option>
+				<option>Kaaawa</option>
+				<option>Kakaako</option>
+				<option>Kahala</option>
+				<option>Kahuku</option>
+				<option>Kailua</option>
+				<option>Kaneohe</option>
+				<option>Kapolei</option>
+				<option>Laie</option>
+				<option>Lanikai</option>
+				<option>Maiili</option>
+				<option>Makaha</option>
+				<option>Manoa</option>
+				<option>Mililani</option>
+				<option>Nanakuli</option>
+				<option>Pearl City</option>
+				<option>Wahiawa</option>
+				<option>Waialua</option>
+				<option>Waianae</option>
+				<option>Waikiki</option>
+				<option>Waimanalo</option>
+				<option>Waipahu</option>
+				<option>Island Wide</option>
+			</select>
+			for my
+			<select>
+				<option selected>preschooler</option>
+				<option>elementary student</option>
+				<option>middle schooler</option>
+				<option>high schooler</option>
+			</select>
+			. 
+			<div class="nl-overlay"></div>
+		</form>
+	</div>
+	<div class="container">
+		<div class="col-md-4 listSec" ng-repeat="culture in data.cultures">
+			<div class="testSec">
+				<a ng-href="individualTemplate/culture/{{ culture._id }}" target="_blank">
+					<img ng-src="{{ culture.image }}" class="itemPic" alt="">
+					<div class="nameHolder">
+						<p class="itemHeader">{{ culture.name }}</p></a>
+						<p class="itemCity">{{ culture.city }}</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div ng-show="show.healths">
+	<div class="main clearfix">
+		<form id="nl-form" class="nl-form container">
+			I'm looking for a kid-friendly
+			<select>
+				<option selected>doctor</option>
+				<option>dentist</option>
+				<option>therapist</option>
+			</select>
+			in
+			<select>
+				<option>Aiea</option>
+				<option>Ewa</option>
+				<option>Haleiwa</option>
+				<option>Hauula</option>
+				<option>Hawaii Kai</option>
+				<option selected>Honolulu</option>
+				<option>Kaaawa</option>
+				<option>Kakaako</option>
+				<option>Kahala</option>
+				<option>Kahuku</option>
+				<option>Kailua</option>
+				<option>Kaneohe</option>
+				<option>Kapolei</option>
+				<option>Laie</option>
+				<option>Lanikai</option>
+				<option>Maiili</option>
+				<option>Makaha</option>
+				<option>Manoa</option>
+				<option>Mililani</option>
+				<option>Nanakuli</option>
+				<option>Pearl City</option>
+				<option>Wahiawa</option>
+				<option>Waialua</option>
+				<option>Waianae</option>
+				<option>Waikiki</option>
+				<option>Waimanalo</option>
+				<option>Waipahu</option>
+				<option>Island Wide</option>
+			</select>
+			. 
+			<div class="nl-overlay"></div>
+		</form>
+	</div>
+	<div class="container">
+		<div class="col-md-4 listSec" ng-repeat="health in data.healths">
+			<div class="testSec">
+				<a ng-href="individualTemplate/healths/{{ health._id }}" target="_blank">
+					<img ng-src="{{ health.image }}" class="itemPic" alt="">
+					<div class="nameHolder">
+						<p class="itemHeader">{{ health.name }}</p></a>
+						<p class="itemCity">{{ health.city }}</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<section>
+	<div id="scrollArea" class="container">
+		<a ng-click="gotoTop()"><img src="../assets/images/arrowUp.png"></a>
+	</div>
+	<footer class="col-md-12">
+	<div class="container">
+		<div class="col-md-6">
+			<img src="../assets/images/butterbean-white-logo.png">
+			<p>&copy; Copyright 2014</p>
+		</div>
+		<div class="col-md-2">
+			<h2>Company</h2>
+			<ul>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Jobs</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Terms & Privacy</a></li>
+			</ul>
+		</div>
+		<div class="col-md-2">
+			<h2>Contribute</h2>
+			<ul>
+				<li><a href="#">Suggest an Activty</a></li>
+				<li><a href="#">Advertise With Us</a></li>
+				<li><a href="#">Feedback</a></li>
+			</ul>
+		</div>
+		<div class="col-md-2">
+			<h2>Connect</h2>
+			<ul>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Pinterest</a></li>
+			</ul>
+		</div>
+	</div>
+	</footer>
+</section>
+
+
+
+
+
+

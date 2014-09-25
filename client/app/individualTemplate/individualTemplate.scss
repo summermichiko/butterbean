@@ -1,0 +1,349 @@
+// TOP IMAGE
+.top-image {
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.img-hero {
+	width: 100%;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.logo-wrapper {
+	height: 180px;
+	width: 180px;
+	background-color: #e0c61a;
+	margin-top: -95px;
+	z-index: 100;
+	float: left;
+	position: relative;
+}
+
+.logo {
+	height: 160px;
+	width: 160px;
+	z-index: 1000;
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+}
+
+.top-name {
+	margin-top: -55px;
+	margin-left: 200px;
+	z-index: 100;
+	color: #fff;
+}
+
+// VIDEO MODAL
+.closeVideoBtn {
+	border-radius: 0px;
+	background-color: #e0c61a;
+	color: #fff;
+	font-family: Lato;
+	font-size: 20px;
+	font-weight: 300;
+	padding: 10px 20px;
+}
+
+//EDIT ITEM MODAL
+.editingBtn {
+	border-radius: 0px;
+	background-color: #31989a;
+	color: #fff;
+	font-family: Lato;
+	font-size: 20px;
+	font-weight: 300;
+	padding: 10px 20px;
+	border: none;
+}
+
+// BOOKMARK MODAL
+.modal-header {
+	border-bottom: 0;
+}
+
+.modal-footer {
+	border-top: 0;
+}
+
+.modal-title {
+	font-family: Amatic SC;
+	font-size: 45px;
+	color: #e0c61a;
+}
+
+.modal-body1 {
+	padding-top: 0;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.modal-body1 img {
+	width: 195px;
+	height: 115px;
+	float: left;
+    margin-top: -5px;
+}
+
+.modalText {
+	background-color: #eee;
+	height: 115px;
+}
+
+.modalName{
+	font-family: Lato;
+	font-size: 20px;
+	padding-top: 15px;
+	padding-left: 210px;
+	color: #31989a;
+	line-height: 1.25em;
+}
+
+.modalCity {
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 300;
+	padding-left: 210px;
+	color: #545454;
+	line-height: 1.25em;
+}
+
+.cancelBtn img {
+	width: 20px;
+	height: 20px;
+	float: right;
+	cursor: pointer;
+	margin-top: -55px;
+}
+
+.bookmarkItBtn {
+	border-radius: 0px;
+	background-color: #31989a;
+	color: #fff;
+	font-family: Lato;
+	font-size: 20px;
+	font-weight: 300;
+	padding: 10px 20px;
+}
+
+// INFO SECTION
+.info {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.info p {
+	font-family: Lato;
+	font-weight: 300;
+	text-align: justify;
+	font-size: 20px;
+}
+
+// DATA SECTION
+.data {
+	margin-top: 25px;
+	margin-bottom: 60px;
+}
+
+//BOOKMARK BUTTON
+.bookmarkBtn {
+	margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 63px;
+    line-height: 63px;
+ 	margin-bottom: 15px;
+    display: block;
+    border-radius: 0;
+    font-size: 25px;
+    background-color: #e0c61a;
+    border: none;
+    font-family: Lato;
+    font-weight: 300;
+    transition-property: background;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    color: #fff;
+    text-align: center;
+}
+
+.bottomBtn:hover {
+    background-color: #328180;
+    text-decoration: none;
+}
+
+// GOOGLE MAP
+.angular-google-map-container {
+	height: 300px;
+	width: 100%;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+// CONTACT INFO
+.contactInfo {
+	margin-top: 0px;
+	width: 100%;
+	background-color: #eee;
+	padding: 15px;
+	margin-bottom: 15px;
+	font-family: Lato;
+}
+
+.contactInfo p {
+	line-height: 0.75em;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+// SCHOOL INFO
+.schoolInfo {
+	width: 100%;
+	background-color: #eee;
+	padding: 15px;
+	margin-bottom: 15px;
+	font-family: Lato;
+}
+
+.schoolInfo p {
+	line-height: 0.75em;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+// YELP INFO
+.yelpInfo {
+	width: 100%;
+	background-color: #eee;
+	padding: 15px;
+	margin-bottom: 15px;
+	font-family: Lato;
+}
+
+.yelpInfo p {
+	line-height: 0.75em;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+// BOTTOM THREE SUGGESTIONS
+.bottomSection {
+	background-color: #eee;
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+.bottomSection a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.bottomSection a:hover {
+	text-decoration: none;
+}
+
+.threeSuggestions h5 {
+	color: #545454;
+	font-family: Lato;
+	font-weight: 300;
+	font-size: 20px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+.threeSuggestions img {
+	width: 320px;
+	height: 200px;
+	display: block;
+	margin: 0 auto;
+}
+
+.suggestionHolder {
+	width: 320px;
+	height: 115px;
+	background-color: #fff;
+}
+
+.threeItemName {
+	max-width: 90%;
+	margin: 0 auto;
+	font-family: Lato;
+	font-weight: 500;
+	font-size: 20px;
+	color: #31989a;
+	padding-top: 15px;
+	text-decoration: none;
+	line-height: 1.2em;
+}
+
+.itemCity {
+	max-width: 90%;
+	margin: 0 auto;
+	font-family: Lato;
+	font-weight: 300;
+	font-size: 16px;
+	color: #545454;
+	text-decoration: none;
+}
+
+// FOOTER
+.darker-yellow {
+    height: 8px;
+    width: 100%;
+    background-color: #c7ae20;
+}
+
+footer {
+    background-color: #e0c61a;
+    height: 225px;
+    width: 100%;
+    font-family: Lato;
+    padding-top: 30px;
+}
+
+footer img {
+    width: 200px;
+}
+
+footer p {
+    color: #545454;
+    margin-left: 13px;
+}
+
+footer h2 {
+    font-size: 16px;
+    color: #545454;
+    font-weight: 700;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #328180;
+}
+
+footer a {
+    color: #545454;
+}
+
+
+
+
+
+
+
+
+
+
+
