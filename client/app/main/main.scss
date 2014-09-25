@@ -312,6 +312,10 @@
     margin-right: auto;
 }
 
+.tips a:hover {
+  text-decoration: none;
+}
+
 .img1 {
     background-image: url("/assets/images/tip1.jpg");
     height: 200px;

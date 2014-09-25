@@ -28,7 +28,7 @@ angular.module('tripplannerAngularApp')
       $anchorScroll();
     };
 
-    $scope.users = User.query();
+
 
     $scope.show = {
     	schools: true,
