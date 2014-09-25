@@ -486,7 +486,7 @@ Item.find({}).remove(function() {
         city: "Kailua",
         logo: "../assets/images/sja-logo.jpg"
       }, {
-        name: "Kaimuki Christian School", 
+        name: "Kaimuki Christian School",
         yelpName: "kaimuki-christian-school-honolulu",
         image: "/assets/images/m.png",
         category: "schools",
@@ -1779,7 +1779,7 @@ Item.find({}).remove(function() {
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
         logo: "../assets/images/sja-logo.jpg"
-      }, { 
+      }, {
         name: "Na Maka",
         yelpName: "windward-nazarene-academy-kaneohe",
         image: "/assets/images/namaka.jpg",
@@ -1830,7 +1830,7 @@ Item.find({}).remove(function() {
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
         logo: "../assets/images/sja-logo.jpg"
-      }, { 
+      }, {
         name: "TLC for Kids School",
         yelpName: "windward-nazarene-academy-kaneohe",
         image: "/assets/images/TLC.jpg",
@@ -1882,7 +1882,7 @@ Item.find({}).remove(function() {
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
         logo: "../assets/images/sja-logo.jpg"
-    }, { 
+    }, {
         name: "Polynesian Culture Center",
         yelpName: "windward-nazarene-academy-kaneohe",
         image: "/assets/images/pcc.jpg",
@@ -1933,7 +1933,7 @@ Item.find({}).remove(function() {
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
         logo: "../assets/images/sja-logo.jpg"
-    }, { 
+    }, {
         name: "Hawaii Nature Center",
         yelpName: "windward-nazarene-academy-kaneohe",
         image: "/assets/images/nature.jpg",
@@ -2108,23 +2108,23 @@ Item.find({}).remove(function() {
     });
 });
 
-// User.find({}).remove(function() {
-//   User.create({
-//     provider: 'local',
-//     name: 'Test User',
-//     email: 'test@test.com',
-//     password: 'test'
-//   }, {
-//     provider: 'local',
-//     role: 'admin',
-//     name: 'Admin',
-//     email: 'admin@admin.com',
-//     password: 'admin'
-//   }, function() {
-//       console.log('finished populating users');
-//     }
-//   );
-// });
+User.find({}).remove(function() {
+  User.create({
+    provider: 'local',
+    name: 'Test User',
+    email: 'test@test.com',
+    password: 'test'
+  }, {
+    provider: 'local',
+    role: 'admin',
+    name: 'Admin',
+    email: 'admin@admin.com',
+    password: 'admin'
+  }, function() {
+      console.log('finished populating users');
+    }
+  );
+});
 
 
 

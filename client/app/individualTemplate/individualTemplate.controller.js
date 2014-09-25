@@ -53,7 +53,7 @@ angular.module('tripplannerAngularApp')
           console.log(randomItemArray);
           return randomItemArray;
       }();
-      
+
     });
 
     $http.get('/api/items/' + itemId).success(function(allData) {
@@ -120,11 +120,11 @@ angular.module('tripplannerAngularApp')
   }); //closing IndividualTemplateCtrl
 
 //BOOKMARK MODAL
-var BookmarkModalCtrl = function ($scope, $modal, $log, Auth, $stateParams) {
+var BookmarkModalCtrl = /*@ngInject*/ function ($scope, $modal, $log, Auth, $stateParams) {
   $scope.userId = Auth.getCurrentUser()._id;
   $scope.itemId = $stateParams.itemId
-  console.log("this is the itemId " + $scope.itemId);
-  // console.log($scope.userId);
+
+  console.log($scope.userId);
   $scope.open = function (templateUrl) {
     var modalInstance = $modal.open({
       templateUrl: 'bookmarkContent.html',
@@ -145,7 +145,7 @@ var BookmarkModalCtrl = function ($scope, $modal, $log, Auth, $stateParams) {
     });
   };
 };
-var BookmarkModalInstanceCtrl = function ($scope, $modalInstance, currentUserId, currentItemId, $http) {
+var BookmarkModalInstanceCtrl = /*@ngInject*/ function ($scope, $modalInstance, currentUserId, currentItemId, $http) {
   $scope.name = "";
   $scope.selected = {
     item: $scope.name
@@ -161,7 +161,7 @@ var BookmarkModalInstanceCtrl = function ($scope, $modalInstance, currentUserId,
   };
 };
 
-var EditItemInstanceCtrl = function ($scope, $modalInstance, $http, formFiller) {
+var EditItemInstanceCtrl = /*@ngInject*/ function ($scope, $modalInstance, $http, formFiller) {
   $scope.formFiller = formFiller;
   console.log($scope.formFiller);
 
@@ -176,7 +176,7 @@ var EditItemInstanceCtrl = function ($scope, $modalInstance, $http, formFiller) 
   };
 };
 
-var VideoInstanceCtrl = function ($scope, $modalInstance, currentItem) {
+var VideoInstanceCtrl = /*@ngInject*/ function ($scope, $modalInstance, currentItem) {
   console.log("this is the current item", currentItem);
   $scope.currentItem = currentItem;
   $scope.ok = function () {
@@ -189,7 +189,7 @@ var VideoInstanceCtrl = function ($scope, $modalInstance, currentItem) {
 };
 
 
-var DoneModalCtrl = function ($scope, $modal, $log) {
+var DoneModalCtrl = /*@ngInject*/ function ($scope, $modal, $log) {
   $scope.items = ['item1', 'item2', 'item3'];
   $scope.open = function (templateUrl) {
     var modalInstance = $modal.open({
@@ -208,7 +208,7 @@ var DoneModalCtrl = function ($scope, $modal, $log) {
     });
   };
 };
-var DoneModalInstanceCtrl = function ($scope, $modalInstance, items) {
+var DoneModalInstanceCtrl = /*@ngInject*/ function ($scope, $modalInstance, items) {
   $scope.items = items;
   $scope.selected = {
     item: $scope.items[0]

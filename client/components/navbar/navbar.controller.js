@@ -22,7 +22,7 @@ angular.module('tripplannerAngularApp')
     };
   });
 
-  var BookmarkListCtrl = function ($scope, $modal, $log, $stateParams) {
+  var BookmarkListCtrl = /*@ngInject*/ function ($scope, $modal, $log, $stateParams) {
       var itemId = $stateParams.itemId;
 
       $scope.open = function (templateUrl) {
@@ -44,7 +44,7 @@ angular.module('tripplannerAngularApp')
     };
     // Please note that $modalInstance represents a modal window (instance) dependency.
     // It is not the same as the $modal service used above.
-    var BookmarkListInstanceCtrl = function (Auth, $scope, $modalInstance, currentItem, $http) {
+    var BookmarkListInstanceCtrl = /*@ngInject*/ function (Auth, $scope, $modalInstance, currentItem, $http) {
       var user = Auth.getCurrentUser();
       
       $scope.delete = function (bookmark, index) {
@@ -70,7 +70,7 @@ angular.module('tripplannerAngularApp')
       });
     };
 
-    var AddItemCtrl = function ($scope, $modal, $log) {
+    var AddItemCtrl = /*@ngInject*/ function ($scope, $modal, $log) {
       $scope.open = function (size) {
         var modalInstance = $modal.open({
           templateUrl: 'addItem.html',
@@ -86,7 +86,7 @@ angular.module('tripplannerAngularApp')
       };
     };
 
-    var AddItemInstanceCtrl = function ($scope, $modalInstance, $http) {
+    var AddItemInstanceCtrl = /*@ngInject*/ function ($scope, $modalInstance, $http) {
       $scope.ok = function () {
       };
 

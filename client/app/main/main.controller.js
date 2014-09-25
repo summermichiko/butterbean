@@ -26,13 +26,13 @@ angular.module('tripplannerAngularApp')
     
         $scope.myInterval = 5000;
         var slides = $scope.slides = [{
-            image: "../assets/images/wna.jpg",
+            image: "/assets/images/wna.jpg",
             text: "Test"
         }, {
-            image: "../assets/images/greatharvest.jpg",
+            image: "/assets/images/greatharvest.jpg",
             text: "Test"
         }, {
-            image: "../assets/images/wetnwild.jpg",
+            image: "/assets/images/wetnwild.jpg",
             text: "Teest"
         }];
    

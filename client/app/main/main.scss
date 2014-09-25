@@ -162,7 +162,7 @@
 
 // TOP HERO IMAGE
 .hero {
-    background-image: url("../assets/images/new-hero.jpg");
+    background-image: url("/assets/images/new-hero.jpg");
     height: 800px;
     width: 100%;
     background-repeat: no-repeat;
@@ -261,7 +261,7 @@
 
 // VIDEO SLIDER SECTION
 .video-pattern {
-    background-image: url("../assets/images/chevron-pattern.png");
+    background-image: url("/assets/images/chevron-pattern.png");
 }
 
 .video-section p  {
@@ -301,21 +301,21 @@
 }
 
 .img1 {
-    background-image: url("../assets/images/tip1.jpg");
+    background-image: url("/assets/images/tip1.jpg");
     height: 200px;
     width: 320px;
     background-position: 0;
 }
 
 .img2 {
-    background-image: url("../assets/images/tip3.jpg");
+    background-image: url("/assets/images/tip3.jpg");
     height: 200px;
     width: 320px;
     background-position: 0;
 }
 
 .img3 {
-    background-image: url("../assets/images/tip2.jpg");
+    background-image: url("/assets/images/tip2.jpg");
     height: 200px;
     width: 320px;
     background-position: center;
@@ -347,7 +347,7 @@
 
 // BOTTOM BUTTON SECTION
 .bottom-btn-section {
-    background-image: url("../assets/images/chevron-pattern.png");
+    background-image: url("/assets/images/chevron-pattern.png");
 }
 
 .bottom-btn-section h1 {
