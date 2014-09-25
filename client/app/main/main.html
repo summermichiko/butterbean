@@ -4,7 +4,7 @@
 		<div class="container">
 		  <div class="row">
 		    <div class="col-md-8 col-md-offset-2 text-center inner">
-		      <h1 class="main-header">Discover amazing activities 
+		      <h1 class="main-header">Discover amazing activities
 				<br>
 		      	with your kids.</h1>
 		      <a href="/signup" class="top-link">Join today</a>
@@ -74,27 +74,24 @@
   </div>
 </section>
 <section class="video-pattern">
-  <!-- <div class="video-container">
-	<img class="left-video" src="../assets/images/hero-image.png">
-	<img class="mid-video" src="../assets/images/hero-image.png">
-	<img class="right-video" src="../assets/images/hero-image.png">
-  </div> -->
   <div class="container video-section">
   	<h1 class="section-header">More Than Just Facts and Figures</h1>
   	<p>Students thrive under a teacher who really cares. Food tastes better when served with a warm smile. We work hard to spotlight more than the dry numbers, but the people that make up our featured organizations. Example spotlights:</p>
   	<!-- <iframe width="853" height="480" src="//www.youtube.com/embed/zTPRBnCm12M" frameborder="0" allowfullscreen></iframe> -->
-	<div ng-controller="MainCtrl">
 	  <div>
 	    <carousel interval="myInterval">
 	      <slide ng-repeat="slide in slides" active="slide.active" style="height: 400px" ng-click="/signup">
-	        <img ng-src="{{slide.image}}" style="margin:auto;">
-	        <div class="carousel-caption">
-	          <p>{{slide.text}}</p>
-	        </div>
+          <a ng-href="/signup">
+  	        <img ng-src="{{slide.image}}" style="margin:auto;">
+  	        <div class="carousel-caption">
+  	          <p class="topCaption">{{slide.text}}</p>
+              <p class="bottomCaption">{{slide.description}}</p>
+              <img src="/assets/images/playButton.png">
+  	        </div>
+          </a>
 	      </slide>
 	    </carousel>
 	  </div>
-	</div>
   </div>
 
 </section>

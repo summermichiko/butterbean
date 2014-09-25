@@ -273,12 +273,24 @@
     text-align: center;
 }
 
-.carousel-caption p {
-    font-size: 30px;
+.carousel-caption .topCaption {
+    font-size: 35px;
     font-family: Lato;
     font-weight: 700;
     color: #fff;
-    margin-top: -180px;
+    margin-top: -205px;
+}
+
+.carousel-caption .bottomCaption {
+    font-size: 20px;
+    font-family: Lato;
+    font-weight: 300;
+    color: #fff;
+    margin-top: -40px;
+}
+
+.carousel-caption img {
+  margin-top: -27px;
 }
 
 // .video-section iframe {

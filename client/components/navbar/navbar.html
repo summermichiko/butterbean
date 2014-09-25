@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="/planner" class="navbar-brand"><img ng-src="../assets/images/butterbean-yellow-logo.png"></a>
+      <a href="/planner" class="navbar-brand"><img ng-src="/assets/images/butterbean-yellow-logo.png"></a>
     </div>
     <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
       <ul class="nav navbar-nav">
@@ -61,7 +61,7 @@
                       Boarding: <input type="text" ng-model="formObj.boarding">
                   </div>
                   <div>
-                      Gender: 
+                      Gender:
                       <select type="text" ng-model="formObj.gender">
                         <option>Co-ed</option>
                         <option>Boys Only</option>
@@ -107,16 +107,16 @@
                 <h3 class="modal-title">Your Bookmark List</h3>
                 <div class="cancelBtn">
                   <img ng-src="../assets/images/x.png" ng-click="cancel()"></button>
-                </div>            
+                </div>
             </div>
             <div class="modal-body">
-              <div ng-repeat="bookmark in bookmarks track by $index"> 
+              <div ng-repeat="bookmark in bookmarks track by $index">
               <a ng-href="/individualTemplate/{{bookmark.category}}/{{bookmark._id}}">
                 <img ng-src="{{bookmark.image}}" alt="">
                 <div class="modalText">
                   <div class="btn deleteListBtn">
                     <img ng-src="../assets/images/trash-can.png" ng-click="delete(bookmark, $index)"></button>
-                  </div>  
+                  </div>
                   <p class="modalName1">{{bookmark.name}}</p>
                   <p class="modalCity">{{bookmark.city}}</p>
                 </div>

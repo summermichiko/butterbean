@@ -1,12 +1,12 @@
 <section>
 	<div class="tabs">
 		<ul class="categoryMenu container">
-			<li class="icon" ng-click="showItems('schools')"><img src="../assets/images/school-icon.png">Schools</li>
-			<li class="icon" ng-click="showItems('actives')"><img src="../assets/images/bike-icon.png">Outdoor + Active</li>
-			<li class="icon" ng-click="showItems('foods')"><img src="../assets/images/food-icon.png">Food</li>
-			<li class="icon" ng-click="showItems('enrichments')"><img src="../assets/images/music-icon.png">Enrichment + Learning</li>
-			<li class="icon" ng-click="showItems('cultures')"><img src="../assets/images/museum-icon.png">Culture + History</li>
-			<li class="icon" ng-click="showItems('healths')"><img src="../assets/images/health-icon.png">Health + Wellness</li>
+			<li ng-class="show.schools ? 'icon activeClass' : 'icon'" ng-click="showItems('schools')"><img src="../assets/images/school-icon.png">Schools</li>
+			<li ng-class="show.actives ? 'icon activeClass' : 'icon'" ng-click="showItems('actives'); addActive('actives')"><img src="../assets/images/bike-icon.png">Outdoor + Active</li>
+			<li ng-class="show.foods ? 'icon activeClass' : 'icon'" ng-click="showItems('foods'); addActive('foods')"><img src="../assets/images/food-icon.png">Food</li>
+			<li ng-class="show.enrichments ? 'icon activeClass' : 'icon'" ng-click="showItems('enrichments'); addActive('enrichments')"><img src="../assets/images/music-icon.png">Enrichment + Learning</li>
+			<li ng-class="show.cultures ? 'icon activeClass' : 'icon'" ng-click="showItems('cultures'); addActive('cultures')"><img src="../assets/images/museum-icon.png">Culture + History</li>
+			<li ng-class="show.healths ? 'icon activeClass' : 'icon'" ng-click="showItems('healths'); addActive('healths')"><img src="../assets/images/health-icon.png">Health + Wellness</li>
 		</ul>
 	</div><!-- /tabs -->
 </section>
@@ -14,7 +14,7 @@
 <div id="top" ng-show="show.schools">
 	<div class="main clearfix">
 		<form class="nl-form container">
-			I'm looking for a private school in 
+			I'm looking for a private school in
 			<select ng-model="search.town" class="selectpicker">
 				<option>any town</option>
 				<option>Aiea</option>
@@ -52,7 +52,7 @@
 				<option>middle schooler</option>
 				<option>high schooler</option>
 			</select>
-			. 
+			.
 			<div class="nl-overlay"></div>
 		</form>
 	</div>
@@ -82,7 +82,7 @@
 				<option>park</option>
 				<option>paid attraction</option>
 			</select>
-			in 
+			in
 			<select>
 				<option>Aiea</option>
 				<option>Ewa</option>
@@ -155,7 +155,7 @@
 				<option>cuisine</option>
 				<option>cuisine</option>
 			</select>
-			place in 
+			place in
 			<select>
 				<option>Aiea</option>
 				<option>Ewa</option>
@@ -209,14 +209,14 @@
 <div ng-show="show.enrichments">
 	<div class="main clearfix">
 		<form id="nl-form" class="nl-form container">
-			I'm looking for 
+			I'm looking for
 			<select>
 				<option selected>sports activities</option>
 				<option>language lessons</option>
 				<option>music lessons</option>
 				<option>tutoring</option>
 			</select>
-			in 
+			in
 			<select>
 				<option>Aiea</option>
 				<option>Ewa</option>
@@ -254,7 +254,7 @@
 				<option>middle schooler</option>
 				<option>high schooler</option>
 			</select>
-			. 
+			.
 			<div class="nl-overlay"></div>
 		</form>
 	</div>
@@ -282,7 +282,7 @@
 				<option>animal exhibits</option>
 				<option>cultural sites</option>
 			</select>
-			in 
+			in
 			<select>
 				<option>Aiea</option>
 				<option>Ewa</option>
@@ -320,7 +320,7 @@
 				<option>middle schooler</option>
 				<option>high schooler</option>
 			</select>
-			. 
+			.
 			<div class="nl-overlay"></div>
 		</form>
 	</div>
@@ -379,7 +379,7 @@
 				<option>Waipahu</option>
 				<option>Island Wide</option>
 			</select>
-			. 
+			.
 			<div class="nl-overlay"></div>
 		</form>
 	</div>

@@ -1,13 +1,17 @@
 /* style for the landing page - main.html */
 
-// .fixed {  
-//     position: fixed;     
-//     top: 0;      
-//     width: 100%;  
-//     left: 0;    
-//     z-index: 100;  
+// .fixed {
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//     left: 0;
+//     z-index: 100;
 //     border-top: 0;
-// } 
+// }
+
+.activeClass {
+  background-color: #c7ae20;
+}
 
 .container {
 	width: 1080px;
@@ -251,7 +255,7 @@
 // 	color: rgba(255,255,255,0.2);
 // }
 
-// input:-ms-input-placeholder {  
+// input:-ms-input-placeholder {
 // 	color: rgba(255,255,255,0.8);
 // }
 
@@ -369,7 +373,7 @@
 	text-decoration: none;
 }
 
-// FOOTER 
+// FOOTER
 .darker-yellow {
     height: 8px;
     width: 100%;

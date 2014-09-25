@@ -23,18 +23,21 @@ angular.module('tripplannerAngularApp')
     // $scope.$on('$destroy', function () {
     //   socket.unsyncUpdates('thing');
     // });
-    
+
         $scope.myInterval = 5000;
         var slides = $scope.slides = [{
-            image: "/assets/images/wna.jpg",
-            text: "Test"
+            image: "/assets/images/baker.jpg",
+            text: "Kelly Shigeta",
+            description: "Head Baker at Great Harvest Bread Company"
         }, {
-            image: "/assets/images/greatharvest.jpg",
-            text: "Test"
+            image: "/assets/images/skydiver.jpg",
+            text: "Danny Cosson",
+            description: "Senior skydiver at Skydive Hawaii"
         }, {
-            image: "/assets/images/wetnwild.jpg",
-            text: "Teest"
+            image: "/assets/images/danceteacher.jpg",
+            text: "George Monroe",
+            description: "Advanced ballet teacher at Pas De Deux"
         }];
-   
+
 
   });
