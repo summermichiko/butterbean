@@ -28,8 +28,6 @@ angular.module('tripplannerAngularApp')
       $anchorScroll();
     };
 
-
-
     $scope.show = {
     	schools: true,
     	foods: false,

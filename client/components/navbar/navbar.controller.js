@@ -46,7 +46,7 @@ angular.module('tripplannerAngularApp')
     // It is not the same as the $modal service used above.
     var BookmarkListInstanceCtrl = /*@ngInject*/ function (Auth, $scope, $modalInstance, currentItem, $http) {
       var user = Auth.getCurrentUser();
-      
+
       $scope.delete = function (bookmark, index) {
         console.log("this is the bookkmark:", bookmark);
         console.log("this is the index" , index);
