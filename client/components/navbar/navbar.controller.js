@@ -29,7 +29,7 @@ angular.module('tripplannerAngularApp')
 
         var modalInstance = $modal.open({
           templateUrl: 'bookmarkList.html',
-          controller: BookmarkListInstanceCtrl,
+          controller: 'BookmarkListInstanceCtrl',
           resolve: {
             currentItem: function() {
               return itemId;
@@ -74,7 +74,7 @@ angular.module('tripplannerAngularApp')
       $scope.open = function (size) {
         var modalInstance = $modal.open({
           templateUrl: 'addItem.html',
-          controller: AddItemInstanceCtrl,
+          controller: 'AddItemInstanceCtrl',
           size: size
         });
 

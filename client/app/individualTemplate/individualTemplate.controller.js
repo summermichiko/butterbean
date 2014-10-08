@@ -83,7 +83,7 @@ angular.module('tripplannerAngularApp')
     $scope.openEdit = function (size) {
       var modalInstance = $modal.open({
         templateUrl: 'editItem.html',
-        controller: EditItemInstanceCtrl,
+        controller: 'EditItemInstanceCtrl',
         size: size,
         resolve: {
           formFiller: function () {
@@ -102,7 +102,7 @@ angular.module('tripplannerAngularApp')
     $scope.openVideo = function (size) {
       var modalInstance = $modal.open({
         templateUrl: 'videoCtrl.html',
-        controller: VideoInstanceCtrl,
+        controller: 'VideoInstanceCtrl',
         size: size,
         resolve: {
           currentItem: function () {
@@ -124,11 +124,11 @@ var BookmarkModalCtrl = /*@ngInject*/ function ($scope, $modal, $log, Auth, $sta
   $scope.userId = Auth.getCurrentUser()._id;
   $scope.itemId = $stateParams.itemId
 
-  console.log($scope.userId);
+  console.log("this is userid from bookmarkmodalctrl: ", $scope.userId);
   $scope.open = function (templateUrl) {
     var modalInstance = $modal.open({
       templateUrl: 'bookmarkContent.html',
-      controller: BookmarkModalInstanceCtrl,
+      controller: 'BookmarkModalInstanceCtrl',
       resolve: {
         currentUserId: function() {
           return $scope.userId;
@@ -145,14 +145,16 @@ var BookmarkModalCtrl = /*@ngInject*/ function ($scope, $modal, $log, Auth, $sta
     });
   };
 };
-var BookmarkModalInstanceCtrl = /*@ngInject*/ function ($scope, $modalInstance, currentUserId, currentItemId, $http) {
+var BookmarkModalInstanceCtrl = /*@ngInject*/ function ($scope, $modalInstance, currentUserId, currentItemId, $http, Auth) {
+  var userId = Auth.getCurrentUser()._id;
+  // console.log("this is userid from bookmarkmodalinstane: ", userId);
   $scope.name = "";
   $scope.selected = {
     item: $scope.name
   };
   $scope.ok = function () {
     // $http.get("/api/items/" + currentItemId).success(function(resultObj) {
-      $http.put("/api/users/" + currentUserId + "/addbookmark", {itemId: currentItemId}).success(function() {
+      $http.put("/api/users/" + userId + "/addbookmark", {itemId: currentItemId}).success(function() {
         $modalInstance.close($scope.selected.item);
       });
   };
@@ -194,7 +196,7 @@ var DoneModalCtrl = /*@ngInject*/ function ($scope, $modal, $log) {
   $scope.open = function (templateUrl) {
     var modalInstance = $modal.open({
       templateUrl: 'doneContent.html',
-      controller: DoneModalInstanceCtrl,
+      controller: 'DoneModalInstanceCtrl',
       resolve: {
         items: function () {
           return $scope.items;
