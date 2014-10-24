@@ -1,3 +1,4 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
 <section>
 	<div class="tabs">
 		<ul class="categoryMenu container">
@@ -59,15 +60,7 @@
 
 	<div class="container">
 		<div class="col-md-4 listSec" ng-repeat="school in data.schools | filter:search:strict">
-			<div class="testSec">
-				<a ng-href="individualTemplate/schools/{{ school._id }}" target="_blank">
-					<img ng-src="{{ school.image }}" class="itemPic" alt="">
-					<div class="nameHolder">
-						<p class="itemHeader">{{ school.name }}</p>
-						<p class="itemCity">({{ school.city }})</p>
-					</div>
-				</a>
-			</div>
+      <my-item item-info="school" item-url="getUrl('schools', school)"></my-item>
 		</div>
 	</div>
 </div>
@@ -120,15 +113,7 @@
 
 	<div class="container">
 		<div class="col-md-4 listSec" ng-repeat="active in data.actives">
-			<div class="testSec">
-				<a ng-href="individualTemplate/actives/{{ active._id }}" target="_blank">
-					<img ng-src="{{ active.image }}" class="itemPic" alt="">
-					<div class="nameHolder">
-						<p class="itemHeader">{{ active.name }}</p>
-						<p class="itemCity">{{ active.city }}</p>
-					</div>
-				</a>
-			</div>
+			<my-item item-info="active" item-url="getUrl('actives', active)"></my-item>
 		</div>
 	</div>
 </div>
@@ -193,15 +178,7 @@
 
 	<div class="container">
 		<div class="col-md-4 listSec" ng-repeat="food in data.foods">
-			<div class="testSec">
-				<a ng-href="individualTemplate/foods/{{ food._id }}" target="_blank">
-					<img ng-src="{{ food.image }}" class="itemPic" alt="">
-					<div class="nameHolder">
-						<p class="itemHeader">{{ food.name }}</p>
-						<p class="itemCity">{{ food.city }}</p>
-					</div>
-				</a>
-			</div>
+			<my-item item-info="food" item-url="getUrl('foods', food)"></my-item>
 		</div>
 	</div>
 </div>
@@ -260,15 +237,7 @@
 	</div>
 	<div class="container">
 		<div class="col-md-4 listSec" ng-repeat="enrichment in data.enrichments">
-			<div class="testSec">
-				<a ng-href="individualTemplate/enrichments/{{ enrichment._id }}" target="_blank">
-					<img ng-src="{{ enrichment.image }}" class="itemPic" alt="">
-					<div class="nameHolder">
-						<p class="itemHeader">{{ enrichment.name }}</p>
-						<p class="itemCity">{{ enrichment.city }}</p>
-					</div>
-				</a>
-			</div>
+			<my-item item-info="enrichment" item-url="getUrl('enrichments', enrichment)"></my-item>
 		</div>
 	</div>
 </div>
@@ -326,15 +295,7 @@
 	</div>
 	<div class="container">
 		<div class="col-md-4 listSec" ng-repeat="culture in data.cultures">
-			<div class="testSec">
-				<a ng-href="individualTemplate/culture/{{ culture._id }}" target="_blank">
-					<img ng-src="{{ culture.image }}" class="itemPic" alt="">
-					<div class="nameHolder">
-						<p class="itemHeader">{{ culture.name }}</p></a>
-						<p class="itemCity">{{ culture.city }}</p>
-					</div>
-				</a>
-			</div>
+			<my-item item-info="culture" item-url="getUrl('cultures', culture)"></my-item>
 		</div>
 	</div>
 </div>
@@ -385,57 +346,13 @@
 	</div>
 	<div class="container">
 		<div class="col-md-4 listSec" ng-repeat="health in data.healths">
-			<div class="testSec">
-				<a ng-href="individualTemplate/healths/{{ health._id }}" target="_blank">
-					<img ng-src="{{ health.image }}" class="itemPic" alt="">
-					<div class="nameHolder">
-						<p class="itemHeader">{{ health.name }}</p></a>
-						<p class="itemCity">{{ health.city }}</p>
-					</div>
-				</a>
-			</div>
+			<my-item item-info="health" item-url="getUrl('healths', health)"></my-item>
 		</div>
 	</div>
 </div>
-
-<section>
-	<div id="scrollArea" class="container">
-		<a ng-click="gotoTop()"><img src="../assets/images/arrowUp.png"></a>
-	</div>
-	<footer class="col-md-12">
-	<div class="container">
-		<div class="col-md-6">
-			<img src="../assets/images/butterbean-white-logo.png">
-			<p>&copy; Copyright 2014</p>
-		</div>
-		<div class="col-md-2">
-			<h2>Company</h2>
-			<ul>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Jobs</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Terms & Privacy</a></li>
-			</ul>
-		</div>
-		<div class="col-md-2">
-			<h2>Contribute</h2>
-			<ul>
-				<li><a href="#">Suggest an Activty</a></li>
-				<li><a href="#">Advertise With Us</a></li>
-				<li><a href="#">Feedback</a></li>
-			</ul>
-		</div>
-		<div class="col-md-2">
-			<h2>Connect</h2>
-			<ul>
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Twitter</a></li>
-				<li><a href="#">Pinterest</a></li>
-			</ul>
-		</div>
-	</div>
-	</footer>
-</section>
+<div id="scrollArea" class="container">
+    <a ng-click="gotoTop()"><img src="../assets/images/arrowUp.png"></a>
+</div>
 
 
 

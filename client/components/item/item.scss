@@ -1,0 +1,67 @@
+/* ITEM LISTING SECTION */
+.testSec {
+  margin-bottom: 30px;
+}
+
+.itemPic {
+  width: 320px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.nameHolder {
+  width: 320px;
+  height: 115px;
+  background-color: #eee;
+}
+
+.itemHeader {
+  max-width: 90%;
+  margin: 0 auto;
+  font-family: Lato;
+  font-weight: 500;
+  font-size: 20px;
+  color: #31989a;
+  padding-top: 15px;
+  text-decoration: none;
+  line-height: 1.2em;
+}
+
+.listSec {
+  -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.listSec:hover {
+  text-decoration: none;
+  -webkit-transform: scale(1.025);
+    transform: scale(1.025);
+}
+
+.listSec a:hover {
+  text-decoration: none;
+}
+
+.itemCity {
+  max-width: 90%;
+  margin: 0 auto;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 16px;
+  color: #545454;
+  text-decoration: none;
+}
+
+/* Individual View of 3 Randoms */
+.suggestionHolder .nameHolder {
+  width: 320px;
+  height: 115px;
+  background-color: #fff;
+}
+
+

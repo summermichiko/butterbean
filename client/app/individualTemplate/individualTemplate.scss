@@ -240,10 +240,6 @@
 	cursor: pointer;
 }
 
-.bottomSection a:hover {
-	text-decoration: none;
-}
-
 .threeSuggestions h5 {
 	color: #545454;
 	font-family: Lato;
@@ -253,89 +249,6 @@
 	margin-bottom: 20px;
 }
 
-.threeSuggestions img {
-	width: 320px;
-	height: 200px;
-	display: block;
-	margin: 0 auto;
-}
-
-.suggestionHolder {
-	width: 320px;
-	height: 115px;
-	background-color: #fff;
-}
-
-.threeItemName {
-	max-width: 90%;
-	margin: 0 auto;
-	font-family: Lato;
-	font-weight: 500;
-	font-size: 20px;
-	color: #31989a;
-	padding-top: 15px;
-	text-decoration: none;
-	line-height: 1.2em;
-}
-
-.itemCity {
-	max-width: 90%;
-	margin: 0 auto;
-	font-family: Lato;
-	font-weight: 300;
-	font-size: 16px;
-	color: #545454;
-	text-decoration: none;
-}
-
-// FOOTER
-.darker-yellow {
-    height: 8px;
-    width: 100%;
-    background-color: #c7ae20;
-}
-
-footer {
-    background-color: #e0c61a;
-    height: 225px;
-    width: 100%;
-    font-family: Lato;
-    padding-top: 30px;
-}
-
-footer img {
-    width: 200px;
-}
-
-footer p {
-    color: #545454;
-    margin-left: 13px;
-}
-
-footer h2 {
-    font-size: 16px;
-    color: #545454;
-    font-weight: 700;
-}
-
-footer ul {
-    margin: 0;
-    padding: 0;
-}
-
-footer li {
-    text-decoration: none;
-    list-style-type: none;
-}
-
-footer a:hover {
-    text-decoration: none;
-    color: #328180;
-}
-
-footer a {
-    color: #545454;
-}
 
 
 

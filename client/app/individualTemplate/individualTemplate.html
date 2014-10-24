@@ -1,3 +1,4 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
 <div class="top-image">
 	<img ng-src="../assets/images/sja-hero.png" alt="" class="img-hero" ng-click="openVideo('lg')">
 		<div>
@@ -108,35 +109,13 @@
 			    </script>
 			</div>
 
-
-
 			<google-map center="map.center" zoom="map.zoom" pan="true" draggable="true" control="map.control">
 				<marker
 					idKey='marker.id'
 					coords='marker.coords'>
 				</marker>
 			</google-map>
-			<div class="contactInfo">
-				<h4>{{ object.dataFromDatabase.name }}</h4>
-				<p>{{ object.dataFromDatabase.address }}</p>
-				<p>{{ object.dataFromDatabase.telephone }}</p>
-				<p ng-show="object.dataFromDatabase.website">
-					<a href="http://{{object.dataFromDatabase.website}}" target="_blank">Website</a>
-				</p>
-			</div>
-			<div class="schoolInfo" ng-show="object.dataFromDatabase.student">
-				<h4>School Information</h4>
-				<p>Grade Levels: {{object.dataFromDatabase.gradeLevels}}</p>
-				<p>Enrollment: {{object.dataFromDatabase.enrollment}}</p>
-				<p>Gender: {{object.dataFromDatabase.gender}}</p>
-				<p>Religious Affiliation: {{object.dataFromDatabase.religion}}</p>
-				<p>Boarding: {{object.dataFromDatabase.boarding}}</p>
-			</div>
-			<div class="yelpInfo" ng-show="object.dataFromYelp">
-				<h4>Yelp Summary</h4>
-				<p>Rating: {{object.dataFromYelp.rating}}</p>
-				<p><a href="{{object.dataFromYelp.url}}" target="_blank">Yelp Page</a></p>
-			</div>
+      <info-bar info-object="object"></info-bar>
 		</section>
 	</div>
 </div>
@@ -161,7 +140,10 @@
 	<div class="threeSuggestions container">
 		<h5>You may also like:</h5>
 		<div ng-repeat="item in random" class="col-md-4">
-			<a ui-sref="individualTemplate({
+      <my-item class="suggestionHolder" item-info="item" item-url="getUrl(item)"></my-item>
+      <!-- item.html is nested in my-item directive above -->
+
+			<!-- <a ui-sref="individualTemplate({
 				category: item.category,
 				itemId: item._id
 			})">
@@ -170,45 +152,11 @@
 					<p class="threeItemName">{{item.name}}</p>
 					<p class="itemCity">{{item.city}}</p>
 				</div>
-			</a>
+			</a> -->
 		</div>
 	</div>
 </section>
-<section>
-	<footer class="col-md-12">
-	<div class="container">
-		<div class="col-md-6">
-			<a ng-href="/planner"><img src="../assets/images/butterbean-white-logo.png"></a>
-			<p>&copy; Copyright 2014</p>
-		</div>
-		<div class="col-md-2">
-			<h2>Company</h2>
-			<ul>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Jobs</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Terms & Privacy</a></li>
-			</ul>
-		</div>
-		<div class="col-md-2">
-			<h2>Contribute</h2>
-			<ul>
-				<li><a href="#">Suggest an Activty</a></li>
-				<li><a href="#">Advertise With Us</a></li>
-				<li><a href="#">Feedback</a></li>
-			</ul>
-		</div>
-		<div class="col-md-2">
-			<h2>Connect</h2>
-			<ul>
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Twitter</a></li>
-				<li><a href="#">Pinterest</a></li>
-			</ul>
-		</div>
-	</div>
-	</footer>
-</section>
+
 
 
 

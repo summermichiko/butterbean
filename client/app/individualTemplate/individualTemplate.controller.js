@@ -5,6 +5,17 @@ angular.module('tripplannerAngularApp')
     var itemId = $stateParams.itemId;
     var category = $stateParams.category;
 
+    $scope.getUrl = function(item) {
+      return {
+        schools: 'individualTemplate/schools/' + item._id,
+        foods: 'individualTemplate/foods/' + item._id,
+        actives: 'individualTemplate/actives/' + item._id,
+        enrichments: 'individualTemplate/enrichments/' + item._id,
+        cultures: 'individualTemplate/cultures/' + item._id,
+        extras: 'individualTemplate/extras/' + item._id
+      }[category]
+    };
+
     $scope.isAdmin = Auth.isAdmin;
     $scope.map = {
       center: {
@@ -210,6 +221,7 @@ var DoneModalCtrl = /*@ngInject*/ function ($scope, $modal, $log) {
     });
   };
 };
+
 var DoneModalInstanceCtrl = /*@ngInject*/ function ($scope, $modalInstance, items) {
   $scope.items = items;
   $scope.selected = {

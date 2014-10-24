@@ -13,7 +13,7 @@ Item.find({}).remove(function() {
         /* ------------------- SCHOOLS  -------------------- */
         name: "Academy of the Pacific",
         yelpName: "",
-        image: "/assets/images/a.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/a.png",
         category: "schools",
         address: "913 Alewa Drive Honolulu, HI 96817",
         website: "www.aop.net",
@@ -26,11 +26,11 @@ Item.find({}).remove(function() {
         student: ["middle schooler", "high school"],
         city: "Honolulu",
         writeUp: "In general, one's social life as a first-year student tends to revolve around one's 1L section. Because the sections are so large, any activity in which 1L students participate will inevitably have fellow sectionmates, and the tendency to stick with these new friends and cohorts is quite difficult to overcome. Some of HLS's policies and programs, rather than working against this tendency, actually reinforce it. For instance, each section has $12,000 to spend on activities. These activities are sometimes open to the public (for instance, lectures), but are more often insulated by section. HL Central's 1L Cup, which pits the seven 1L sections against one another in cookie-eating, balloon-popping, and pretzel-passing contests, brings the whole class together, but in a way that solidifies bonds within each section and not among them. Still, this section camaraderie, by and large, is a positive aspect of life at Harvard Law School. Section parties and other get-togethers are frequent and provide a chance for extensive social interaction for even the shiest of law students. Upper-class students say that they have stayed friends with their former sectionmates, and professors and students alike note that one's section fellows will serve as career contacts in the future.",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
         }, {
         name: "Adventist Malama Elementary School",
         yelpName: "adventist-malama-elementary-school-waianae",
-        image: "/assets/images/b.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/b.png",
         category: "schools",
         address: "86-072 Farrington Hwy, Waianae, HI 96792",
         website: "http://abcwd.com/ames",
@@ -43,11 +43,11 @@ Item.find({}).remove(function() {
         student: ["elementary student", "middle schooler"],
         city: "Waianae",
         writeUp: "Malama Adventist Elementary school and Daycare in Waianae (one block west of Long’s) provides a high quality Preschool through 8 education program in the Christian tradition which emphasizes the lordship of Jesus Christ over all areas of life. It also prepares students spiritually, socially, academically, and physically to serve society effectively and glorify God by honoring Him in all aspects of life. Today, our school offers a broad educational program including core curricular subjects as well as Bible, art, music, computer science, physical education, and many co-curricular activities. An elementary education at our Christian Elementary campus provides strong academics in the basics of reading, language arts and mathematics as well as a solid foundation in social studies, science and health all taught from a Bible-based perspective. Various classroom activities and school events provide colorful avenues for student creativity and leadership. Daily Bible instruction and prayer, Scripture memorization, weekly chapel services and positive adult Christian role models all help each child seek and develop a growing relationship with God Malama Adventist Christian elementary school and Day-Care offer children a safe, positive and encouraging educational environment.",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
         }, {
         name: "Saint Jerome's Academy",
         yelpName: "american-renaissance-academy-kapolei",
-        image: "/assets/images/c.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/c.png",
         category: "schools",
         address: "P.O. Box 75357 Kapolei, HI 96707",
         telephone: "(808) 682-7337",
@@ -61,11 +61,11 @@ Item.find({}).remove(function() {
         student: ["preschooler", "elementary student", "middle schooler", "high schooler"],
         city: "Kapolei",
         writeUp: "In general, one's social life as a first-year student tends to revolve around one's 1L section. Because the sections are so large, any activity in which 1L students participate will inevitably have fellow sectionmates, and the tendency to stick with these new friends and cohorts is quite difficult to overcome. Some of HLS's policies and programs, rather than working against this tendency, actually reinforce it. For instance, each section has $12,000 to spend on activities. These activities are sometimes open to the public (for instance, lectures), but are more often insulated by section. HL Central's 1L Cup, which pits the seven 1L sections against one another in cookie-eating, balloon-popping, and pretzel-passing contests, brings the whole class together, but in a way that solidifies bonds within each section and not among them. Still, this section camaraderie, by and large, is a positive aspect of life at Harvard Law School. Section parties and other get-togethers are frequent and provide a chance for extensive social interaction for even the shiest of law students. Upper-class students say that they have stayed friends with their former sectionmates, and professors and students alike note that one's section fellows will serve as career contacts in the future. ",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Assets School",
         yelpName: "assets-school-honolulu",
-        image: "/assets/images/d.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/d.png",
         category: "schools",
         address: "1 Ohana Nui Way Honolulu, HI 96818",
         telephone: "(808) 423-1356",
@@ -78,12 +78,12 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["elementary student", "middle schooler", "high schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Calvary Chapel Christian School",
         yelpName: "calvary-chapel-christian-school-aiea",
         description: "Here is a sample description",
-        image: "/assets/images/e.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/e.png",
         category: "schools",
         writeUp: "Here is a sample write up",
         address: "98-1016 Komo Mai Dr. Aiea, HI 96701",
@@ -97,11 +97,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Aiea", "Pearl City"],
         student: ["elementary student", "middle schooler", "high schooler"],
         city: "Aiea",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Cathedral Catholic Academy",
         yelpName: "",
-        image: "/assets/images/f.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/f.png",
         category: "schools",
         address: "1728 Nuuanu Avenue Honolulu HI 96817",
         telephone: "(808) 533-2069",
@@ -114,11 +114,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["elementary student", "middle schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Central Union Church Preschool and Kindergarten",
         yelpName: "central-union-church-preschool-and-kindergarten-honolulu",
-        image: "/assets/images/g.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/g.png",
         category: "schools",
         address: "1660 South Beretania Street, 202 Honolulu, HI 96826",
         telephone: "(808) 946-4025",
@@ -131,11 +131,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["preschooler", "elementary student"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Central Christian School Mililani",
         yelpName: "central-christian-school-mililani",
-        image: "/assets/images/h.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/h.png",
         category: "schools",
         address: "95-388 Wikao S. Mililani, HI 96789",
         telephone: "(808) 625-5055",
@@ -148,11 +148,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Mililani"],
         student: ["preschooler", "elementary student"],
         city: "Mililani",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "The Children's House",
         yelpName: "the-childrens-house-pearl-city",
-        image: "/assets/images/i.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/i.png",
         category: "schools",
         address: "1840 Komo Mai Drive Pearl City, HI 96782",
         telephone: "(808) 455-4131",
@@ -165,11 +165,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Pearl City", "Aiea"],
         student: ["preschooler", "elementary student"],
         city: "Pearl City",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Christian Academy Honolulu",
         yelpName: "christian-academy-honolulu",
-        image: "/assets/images/j.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/j.png",
         category: "schools",
         address: "3400 Moanalua Road Honolulu, HI 96819",
         telephone: "(808) 836-0233",
@@ -182,11 +182,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu", "Aiea", "Pearl City"],
         student: ["preschooler", "elementary student", "middle schooler", "high schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Damien Memorial High School",
         yelpName: "damien-memorial-high-school-honolulu",
-        image: "/assets/images/k.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/k.png",
         category: "schools",
         address: "1401 Houghtailing Street Honolulu, HI 96817",
         telephone: "(808) 841-0195",
@@ -199,11 +199,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["middle schooler", "high schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Friendship Christian Schools",
         yelpName: "friendship-christian-schools-ewa-beach",
-        image: "/assets/images/l.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/l.png",
         category: "schools",
         address: "91-1130 Renton Road Ewa Beach, HI 96706",
         telephone: "(808) 681-8838",
@@ -216,11 +216,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Ewa Beach", "Kapolei"],
         student: ["preschooler", "elementary student", "middle schooler", "high schooler"],
         city: "Ewa Beach",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Hanahauoli School",
         yelpName: "hanahauoli-school-honolulu",
-        image: "/assets/images/m.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/m.png",
         category: "schools",
         address: "1922 Makiki Street Honolulu, HI 96822",
         telephone: "(808) 949-6461",
@@ -233,11 +233,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu", "Manoa"],
         student: ["preschooler", "elementary student"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Hanalani Schools",
         yelpName: "hanalani-schools-mililani",
-        image: "/assets/images/n.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/n.png",
         category: "schools",
         address: "94-294 Anania Drive Mililani, HI 96789",
         telephone: "(808) 625-0737 ext. 456",
@@ -250,11 +250,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Mililani"],
         student: ["preschooler", "elementary student", "middle schooler", "high schooler"],
         city: "Mililani",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Hawaii Baptist Academy",
         yelpName: "hawaii-baptist-academy-honolulu",
-        image: "/assets/images/o.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/o.png",
         category: "schools",
         address: "Administrative Offices Honolulu, HI 96817",
         telephone: "(808) 595-5000",
@@ -267,11 +267,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["elementary student", "middle schooler", "high schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Hawaiian Mission Academy",
         yelpName: "hawaiian-mission-elementary-and-intermediate-school-honolulu?osq=hawaiian+mission+acadmey",
-        image: "/assets/images/p.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/p.png",
         category: "schools",
         address: "1415 Makiki Street Honolulu, HI 96814",
         telephone: "(808) 949-2033",
@@ -284,11 +284,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["elementary student", "middle schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Hawaiian Mission Academy",
         yelpName: "hawaiian-mission-academy-honolulu",
-        image: "/assets/images/a.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/a.png",
         category: "schools",
         address: "1438 Pensacola Street Honolulu, HI 96822",
         telephone: "(808) 536-2207",
@@ -301,10 +301,10 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["high schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Hawaiian Mission Academy Windward Campus",
-        image: "/assets/images/b.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/b.png",
         category: "schools",
         address: "160 Mookua Street Kailua, HI 96734",
         telephone: "(808) 261-0565",
@@ -317,11 +317,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kailua", "Kaneohe"],
         student: ["elementary student", "middle schooler"],
         city: "Kailua",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Hoala School",
         yelpName: "hoala-school-wahiawa-2",
-        image: "/assets/images/c.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/c.png",
         category: "schools",
         address: "1067 A California Avenue Wahiawa, HI 96786",
         telephone: "(808) 621-1898",
@@ -334,11 +334,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Wahiawa"],
         student: ["elementary student", "middle schooler", "high schooler"],
         city: "Wahiawa",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Hoaloha O Ke Kai Montessori School",
         yelpName: "hoaloha-o-ke-kai-montessori-school-honolulu",
-        image: "/assets/images/d.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/d.png",
         category: "schools",
         address: "1339 Hunakai Street Honolulu, HI 96825",
         telephone: "(808) 735-5165",
@@ -350,11 +350,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["preschooler", "elementary student"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Holy Family Catholic Academy",
         yelpName: "",
-        image: "/assets/images/e.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/e.png",
         category: "schools",
         address: "830 Main St. Honolulu, HI 96818",
         telephone: "(808) 423-9611",
@@ -366,11 +366,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Holy Nativity School",
         yelpName: "holy-nativity-school-honolulu",
-        image: "/assets/images/f.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/f.png",
         category: "schools",
         address: "5286 Kalaniana`ole Highway Honolulu, HI 96821",
         telephone: "(808) 373-3232",
@@ -383,11 +383,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu", "Hawaii Kai"],
         student: ["preschooler", "elementary student"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Hongwanji Mission School",
         yelpName: "hongwanji-mission-school-honolulu",
-        image: "/assets/images/g.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/g.png",
         category: "schools",
         address: "1728 Pali Highway Honolulu, HI 96813",
         telephone: "(808) 532-0522",
@@ -400,11 +400,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Honolulu Waldorf School",
         yelpName: "honolulu-waldorf-school-honolulu-2",
-        image: "/assets/images/h.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/h.png",
         category: "schools",
         address: "350 Ulua Street Honolulu, HI 96821",
         telephone: "(808) 377-5471",
@@ -417,10 +417,10 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu", "Kahala", "Hawaii Kai"],
         student: ["preschooler", "elementary student", "middle schooler", "high schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Huakailani School for Girls",
-        image: "/assets/images/i.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/i.png",
         category: "schools",
         address: "146 Hekili St., Suite 104 Kailua, HI 96734",
         telephone: "(808) 315-9374",
@@ -433,11 +433,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kailua", "Kaneohe"],
         student: ["elementary student"],
         city: "Kailua",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Iolani School",
         yelpName: "iolani-school-honolulu",
-        image: "/assets/images/j.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/j.png",
         category: "schools",
         address: "563 Kamoku Street Honolulu, HI 96826",
         telephone: "(808) 949-5355",
@@ -450,11 +450,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["elementary student", "middle schooler", "high schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Island Pacific Academy",
         yelpName: "island-pacific-academy-kapolei",
-        image: "/assets/images/k.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/k.png",
         category: "schools",
         address: "909 Haumea Street Kapolei, HI 96707",
         telephone: "(808) 674-3563",
@@ -467,11 +467,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kapolei", "Ewa Beach"],
         student: ["preschooler", "elementary student", "middle schooler", "high schooler"],
         city: "Kapolei",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Kailua Christian Academy",
         yelpName: "",
-        image: "/assets/images/l.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/l.png",
         category: "schools",
         address: "1110 A Kailua Roadd, Kailua HI 96734",
         telephone: "(808) 263-9999",
@@ -484,11 +484,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kailua", "Kaneohe"],
         student: ["preschooler", "elementary student", "middle schooler", "high schooler"],
         city: "Kailua",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Kaimuki Christian School",
         yelpName: "kaimuki-christian-school-honolulu",
-        image: "/assets/images/m.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/m.png",
         category: "schools",
         address: "1117 Koko Head Avenue Honolulu, HI 96816",
         telephone: "(808) 732-1781",
@@ -501,11 +501,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu", "Kahala"],
         student: ["preschooler", "elementary student", "middle schooler", "high schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Kamehameha Schools",
         yelpName: "kamehameha-schools-honolulu-2?osq=Kamehameha+School",
-        image: "/assets/images/n.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/n.png",
         category: "schools",
         address: "1887 Makuakane Street Honolulu, HI 96817-1887",
         telephone: "(808) 842-8211",
@@ -518,11 +518,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["elementary student", "middle schooler", "high schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Kawaiahao Church School",
         yelpName: "kawaiahao-church-school-honolulu",
-        image: "/assets/images/o.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/o.png",
         category: "schools",
         address: "872 Mission Lane Honolulu, HI 96813",
         telephone: "(808) 585-0622",
@@ -535,11 +535,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["preschooler", "elementary student"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Koolau Baptist Academy",
         yelpName: "koolau-baptist-academy-kaneohe",
-        image: "/assets/images/p.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/p.png",
         category: "schools",
         address: "45-633 Keneke Street, P.O. Box 1642 Kaneohe, HI 96744",
         telephone: "(808) 233-2900",
@@ -552,11 +552,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["elementary student", "middle schooler", "high schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "La Pietra Hawaii School for Girls",
         yelpName: "la-pietra-hawaii-school-for-girls-honolulu",
-        image: "/assets/images/a.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/a.png",
         category: "schools",
         address: "2933 Poni Moi Road Honolulu, HI 96815",
         telephone: "(808) 922-2744",
@@ -569,11 +569,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu", "Kahala"],
         student: ["middle schooler", "high schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Lanakila Baptist School",
         yelpName: "lanakila-baptist-school-ewa-beach",
-        image: "/assets/images/b.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/b.png",
         category: "schools",
         address: "94-1250 Waipahu Street Waipahu, HI 96797",
         telephone: "(808) 677-0731",
@@ -586,11 +586,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Waipahu", "Ewa Beach"],
         student: ["elementary student", "middle schooler", "high schooler"],
         city: "Waipahu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Le Jardin Academy",
         yelpName: "le-jardin-academy-kailua",
-        image: "/assets/images/c.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/c.png",
         category: "schools",
         address: "917 Kalanianaole Hwy. Kailua, HI 96734",
         telephone: "(808) 261-0707 ext. 1310",
@@ -603,11 +603,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kailua", "Kaneohe"],
         student: ["preschooler", "elementary student", "middle schooler", "high schooler"],
         city: "Kailua",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Lutheran High School",
         yelpName: "lutheran-high-school-of-hawaii-honolulu",
-        image: "/assets/images/d.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/d.png",
         category: "schools",
         address: "1404 University Avenue Honolulu, HI 96822",
         telephone: "(808) 949-5302",
@@ -620,11 +620,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu", "Manoa"],
         student: ["middle schooler", "high schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Maili Bible School",
         yelpName: "maili-bible-church-and-school-waianae",
-        image: "/assets/images/e.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/e.png",
         category: "schools",
         address: "87-138 Gilipake Street Waianae, HI 96792",
         telephone: "(808) 696-3038",
@@ -637,11 +637,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Waianae", "Maiili"],
         student: ["elementary student", "middle schooler", "high schooler"],
         city: "Waianae",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Maryknoll School",
         yelpName: "maryknoll-school-honolulu",
-        image: "/assets/images/f.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/f.png",
         category: "schools",
         address: "1526 Alexander Street Honolulu, HI 96822",
         telephone: "(808) 952-7330",
@@ -654,11 +654,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["elementary student", "middle schooler", "high schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Mid-Pacific Institue",
         yelpName: "mid-pacific-institute-honolulu",
-        image: "/assets/images/g.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/g.png",
         category: "schools",
         address: "2445 Kaala Street Honolulu, HI 96822-2299",
         telephone: "(808) 973-5025",
@@ -671,11 +671,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu", "Manoa"],
         student: ["elementary student", "middle schooler", "high schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Montessori Community School",
         yelpName: "montessori-community-school-honolulu",
-        image: "/assets/images/h.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/h.png",
         category: "schools",
         address: "1239 Nehoa Street Honolulu, HI 96822-3071",
         telephone: "(808) 522-0244",
@@ -688,11 +688,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["preschooler", "elementary student"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Navy Hale Keiki School",
         yelpName: "navy-hale-keiki-school-honolulu-2",
-        image: "/assets/images/i.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/i.png",
         category: "schools",
         address: "153 Bougainville Drive Honolulu, HI 96818",
         telephone: "(808) 423-1727",
@@ -705,11 +705,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["preschooler", "elementary student"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "New Hope Christian School",
         yelpName: "new-hope-christian-school-waipahu",
-        image: "/assets/images/j.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/j.png",
         category: "schools",
         address: "94-050 Farrington Hwy., Suite C-2 Waipahu, HI 96707",
         telephone: "(808) 678-3776",
@@ -722,11 +722,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Waipahu", "Ewa Beach"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Waipahu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Our Redeemer Lutheran School",
         yelpName: "our-redeemer-lutheran-school-honolulu",
-        image: "/assets/images/k.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/k.png",
         category: "schools",
         address: "2428 Wilder Ave. Honolulu, HI 96822",
         telephone: "(808)945-7765",
@@ -739,11 +739,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Our Lady of Good Counsel School",
         yelpName: "our-lady-of-good-counsel-school-pearl-city",
-        image: "/assets/images/l.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/l.png",
         category: "schools",
         address: "1530 Hoolana St. Pearl City, HI 96782",
         telephone: "(808)455-4533",
@@ -756,11 +756,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Pearl City", "Aiea"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Pearl City",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Our Lady of Perpetual Help School",
         yelpName: "our-lady-of-perpetual-help-school-ewa-beach",
-        image: "/assets/images/m.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/m.png",
         category: "schools",
         address: "91-1010 N. Road Ewa Beach, HI 96706",
         telephone: "(808)689-0474",
@@ -773,11 +773,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Ewa Beach"],
         student: ["elementary student", "middle schooler"],
         city: "Ewa Beach",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Our Savior Lutheran School",
         yelpName: "our-savior-lutheran-school-aiea",
-        image: "/assets/images/n.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/n.png",
         category: "schools",
         address: "98-1098 Moanalua Road Aiea, HI 96701",
         telephone: "(808) 488-0000",
@@ -790,11 +790,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Aiea", "Pearl City"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Aiea",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Pacific Buddhist Academy",
         yelpName: "pacific-buddhist-academy-honolulu",
-        image: "/assets/images/o.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/o.png",
         category: "schools",
         address: "1710 Pali Highway Honolulu, HI 96813",
         telephone: "(808) 532-2649",
@@ -807,11 +807,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["high schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Pearl Harbor Christian Academy",
         yelpName: "pearl-harbor-christian-academy-honolulu-2",
-        image: "/assets/images/p.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/p.png",
         category: "schools",
         address: "94-1044 Waipio Uka St. Waipahu, HI 96797",
         telephone: "(808) 678-3997",
@@ -824,11 +824,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Waipahu", "Pearl CIty", "Aiea"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Waipahu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Playmate Kindergarten, Day Care Center & Grade School, Ltd.",
         yelpName: "playmate-kindergarten-day-care-ctr-and-grde-schl-ltd-honolulu",
-        image: "/assets/images/a.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/a.png",
         category: "schools",
         address: "1704 Keeaumoku Street Honolulu, HI 96822",
         telephone: "(808) 536-6442",
@@ -840,11 +840,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Waianae", "Maiili"],
         student: ["preschooler", "elementary student"],
         city: "Waianae",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Punahou School",
         yelpName: "punahou-school-honolulu",
-        image: "/assets/images/b.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/b.png",
         category: "schools",
         address: "1601 Punahou Street Honolulu, HI 96822",
         telephone: "(808) 944-5711",
@@ -857,11 +857,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["elementary student", "middle schooler", "high schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Redemption Academy",
         yelpName: "redemption-academy-honolulu-2",
-        image: "/assets/images/c.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/c.png",
         category: "schools",
         address: "423 Kamakee Street Honolulu, HI 96814",
         telephone: "(808) 591-7701",
@@ -874,11 +874,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["elementary student", "middle schooler", "high schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Sacred Hearts Academy",
         yelpName: "sacred-hearts-academy-honolulu",
-        image: "/assets/images/d.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/d.png",
         category: "schools",
         address: "3253 Waialae Avenue Honolulu, HI 96816",
         telephone: "(808) 734-5058 ext. 224",
@@ -891,11 +891,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["preschooler", "elementary student", "middle schooler", "high schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Saint Francis School",
         yelpName: "saint-francis-school-honolulu?osq=st+francis+school",
-        image: "/assets/images/e.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/e.png",
         category: "schools",
         address: "2707 Pamoa Road Honolulu, HI 96822",
         telephone: "(808) 988-4111 ext. 701",
@@ -908,11 +908,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["preschooler", "elementary student", "middle schooler", "high schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Saint Louis School",
         yelpName: "saint-louis-school-honolulu-2?osq=st+louis+school",
-        image: "/assets/images/f.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/f.png",
         category: "schools",
         address: "3142 Waialae Avenue Honolulu, HI 96816-1579",
         telephone: "(808) 739-7777",
@@ -925,11 +925,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["middle schooler", "high schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Saint Mark Lutheran School",
         yelpName: "saint-mark-lutheran-school-kaneohe",
-        image: "/assets/images/g.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/g.png",
         category: "schools",
         address: "45-725 Kamehameha Hwy. Kaneohe, HI 96744",
         telephone: "(808) 247-5589",
@@ -942,11 +942,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "St. Andrews Priory School",
         yelpName: "st-andrews-priory-school-honolulu?osq=st+andrews+schools",
-        image: "/assets/images/h.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/h.png",
         category: "schools",
         address: "224 Queen Emma Square Honolulu, HI 96813",
         telephone: "(808) 536-6102",
@@ -959,11 +959,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["elementary student", "middle schooler", "high schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "St. Ann's Model School",
         yelpName: "",
-        image: "/assets/images/i.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/i.png",
         category: "schools",
         address: "46-125 Haiku Road Kaneohe, HI 96744",
         telephone: "(808) 247-3092",
@@ -976,11 +976,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "St. Anthony School",
         yelpName: "",
-        image: "/assets/images/j.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/j.png",
         category: "schools",
         address: "148 Makawao St. Kailua HI 96734",
         telephone: "(808) 261-3331",
@@ -993,11 +993,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kailua", "Kaneohe"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kailua",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "St. Anthony School",
         yelpName: "",
-        image: "/assets/images/k.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/k.png",
         category: "schools",
         address: "640 Puuhale Road Honolulu, HI 96819",
         telephone: "(808) 845-3255",
@@ -1010,11 +1010,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["elementary student", "middle schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "St. Clements School",
         yelpName: "st-clements-school-honolulu",
-        image: "/assets/images/l.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/l.png",
         category: "schools",
         address: "1515 Wilder Avenue Honolulu, HI 96822-4614",
         telephone: "(808) 949-2082",
@@ -1027,11 +1027,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["preschooler", "elementary student"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "St. Elizabeth School",
         yelpName: "st-elizabeth-school-and-church-aiea",
-        image: "/assets/images/m.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/m.png",
         category: "schools",
         address: "99-310 Moanalua Road Aiea, HI 96701",
         telephone: "(808)487-2414",
@@ -1044,11 +1044,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Aiea", "Pearl City"],
         student: ["elementary student", "middle schooler"],
         city: "Aiea",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "St. John the Baptist School",
         yelpName: "st-john-the-baptist-honolulu",
-        image: "/assets/images/n.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/n.png",
         category: "schools",
         address: "2340 Omilo Lane Honolulu, HI 96819",
         telephone: "(808)841-5551",
@@ -1061,11 +1061,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "St. John's Catholic Preschool",
         yelpName: "st-johns-catholic-preschool-mililani",
-        image: "/assets/images/o.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/o.png",
         category: "schools",
         address: "95-370 Kuahelani Ave. Mililani, HI 96789",
         telephone: "(808)623-3332",
@@ -1078,11 +1078,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Mililani"],
         student: ["preschooler", "elementary student"],
         city: "Mililani",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "St. Joseph School",
         yelpName: "st-joseph-school-waipahu",
-        image: "/assets/images/p.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/p.png",
         category: "schools",
         address: "94-651 Farrington Hwy. Waipahu, HI 96797",
         telephone: "(808) 677-4475",
@@ -1095,11 +1095,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Waipahu"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Waipahu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "St. John Vianney School",
         yelpName: "",
-        image: "/assets/images/a.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/a.png",
         category: "schools",
         address: "940 Keolu Drive Kailua, HI 96734",
         telephone: "(808) 261-4349",
@@ -1112,11 +1112,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kailua", "Kaneohe"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kailua",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "St. Michael School",
         yelpName: "st-michaels-school-waialua",
-        image: "/assets/images/b.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/b.png",
         category: "schools",
         address: "67-340 Haona St. Waialua, HI 96791",
         telephone: "(808) 637-7772",
@@ -1129,11 +1129,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Waialua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Waialua",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "St. Patrick School",
         yelpName: "st-patrick-school-honolulu",
-        image: "/assets/images/c.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/c.png",
         category: "schools",
         address: "3320 Harding Ave. Honolulu, HI 96816",
         telephone: "(808) 734-8979",
@@ -1146,11 +1146,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "St. Philomenas Early Learning Center",
         yelpName: "st-philomenas-early-learning-center-honolulu-2",
-        image: "/assets/images/d.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/d.png",
         category: "schools",
         address: "3300 Ala Laulani Street Honolulu, HI 96818",
         telephone: "(808) 833-8080",
@@ -1163,11 +1163,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["preschooler", "elementary student"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "St. Theresa School",
         yelpName: "st-theresas-school-honolulu",
-        image: "/assets/images/e.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/e.png",
         category: "schools",
         address: "712 N. School St. Honolulu, HI 96817",
         telephone: "(808) 536-4703",
@@ -1180,11 +1180,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["elementary student", "middle schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "St. Timothy's Children's Center",
         yelpName: "",
-        image: "/assets/images/f.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/f.png",
         category: "schools",
         address: "98-939 Moanalua Road Aiea, HI 96701",
         telephone: "(808) 488-1766",
@@ -1197,11 +1197,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Aiea", "Pearl City"],
         student: ["preschooler", "elementary student"],
         city: "Aiea",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Soto Academy",
         yelpName: "soto-academy-honolulu",
-        image: "/assets/images/g.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/g.png",
         category: "schools",
         address: "1708 Nuuanu Avenue Honolulu, HI 96817",
         telephone: "(808) 533-0452",
@@ -1214,11 +1214,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["elementary student"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Star of the Sea School",
         yelpName: "star-of-the-sea-schools-honolulu",
-        image: "/assets/images/h.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/h.png",
         category: "schools",
         address: "4469 Malia St. Honolulu, HI 96821",
         telephone: "(808) 734-3840",
@@ -1231,11 +1231,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Star of the Sea School Early Learning Center",
         yelpName: "star-of-the-sea-schools-honolulu",
-        image: "/assets/images/i.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/i.png",
         category: "schools",
         address: "4470 Aliikoa Street, #100 Honolulu, HI 96821",
         telephone: "(808) 734-3840",
@@ -1248,11 +1248,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["preschooler", "elementary student"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Sunset Beach Christian School",
         yelpName: "",
-        image: "/assets/images/j.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/j.png",
         category: "schools",
         address: "59-578 Kamehameha Hwy. Haleiwa, HI 96712",
         telephone: "(808) 638-8274",
@@ -1265,11 +1265,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Haleiwa"],
         student: ["elementary student", "middle schooler"],
         city: "Haleiwa",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "The Cole Academy",
         yelpName: "cole-academy-honolulu-2",
-        image: "/assets/images/k.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/k.png",
         category: "schools",
         address: "36 Merchant St. Downtown, HI 96813",
         telephone: "(808) 531-4500",
@@ -1282,11 +1282,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["preschooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "The Cole Academy",
         yelpName: "cole-academy-waipahu",
-        image: "/assets/images/l.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/l.png",
         category: "schools",
         address: "94-673 Kupuohi St. Kunia, HI 96797",
         telephone: "(808) 677-4488",
@@ -1299,11 +1299,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Ewa Beach"],
         student: ["preschooler"],
         city: "Ewa Beach",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "The Cole Academy",
         yelpName: "cole-academy-honolulu",
-        image: "/assets/images/m.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/m.png",
         category: "schools",
         address: "1041 10th Ave. Kaimuki, HI 96816",
         telephone: "(808) 732-4200",
@@ -1316,11 +1316,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["preschooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Trinity Lutheran School",
         yelpName: "trinity-lutheran-school-wahiawa-wahiawa",
-        image: "/assets/images/n.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/n.png",
         category: "schools",
         address: "1611 California Avenue Wahiawa, HI 96786",
         telephone: "(808) 621-6033",
@@ -1333,11 +1333,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Wahiawa"],
         student: ["elementary student", "middle schooler"],
         city: "Wahiawa",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Trinity Christian School",
         yelpName: "trinity-christian-school-kailua",
-        image: "/assets/images/o.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/o.png",
         category: "schools",
         address: "875 Auloa Road Kailua, HI 96734",
         telephone: "(808) 262-8501",
@@ -1350,11 +1350,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kailua", "Kaneohe"],
         student: ["preschooler", "elementary student", "middle schooler", "high schooler"],
         city: "Kailua",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Variety School of Hawaii",
         yelpName: "variety-school-of-hawaii-honolulu",
-        image: "/assets/images/p.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/p.png",
         category: "schools",
         address: "710 Palekaua Street Honolulu, HI 96816",
         telephone: "(808) 732-2835",
@@ -1367,11 +1367,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["elementary student", "middle schooler", "high schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Waolani Judd Nazarene School",
         yelpName: "waolani-judd-nazarene-school-honolulu",
-        image: "/assets/images/a.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/a.png",
         category: "schools",
         address: "408 North Judd Street Honolulu, HI 96817",
         telephone: "(808) 531-5251 ext. 302",
@@ -1384,11 +1384,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Honolulu"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Honolulu",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Windward Adventist School",
         yelpName: "",
-        image: "/assets/images/b.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/b.png",
         category: "schools",
         address: "160 Mookua St. Kailua, HI 96734",
         telephone: "(808) 261-0565",
@@ -1401,11 +1401,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kailua", "Kaneohe"],
         student: ["elementary student", "middle schooler"],
         city: "Kailua",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Windward Nazarene Academy",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/c.png",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/c.png",
         category: "schools",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1418,13 +1418,13 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        writeUp: "At WNA we encourage your child to explore — to create — to learn new concepts. Learning by doing motivates preschoolers. The curriculum at WNA is well-rounded — art, music, iPads, even sustainable gardening take their place next to language, math and social studies. Learning is meant to be fun at WNA. From Preschool to Elementary and Intermediate grades (up to grade 8), our students are taught important life skills in a safe, nurturing Christian environment. Our goal is to expand their knowledge and skills while creating lifetime experiences.",
-        logo: "../assets/images/wna-logo.png"
+        writeUp: "At WNA we encourage your child to explore — to create — to learn new concepts. Learning by doing motivates preschoolers. The curriculum at WNA is well-rounded — art, music, iPads, even sustainable gardening take their place next to language, math and social studies. Learning is meant to be fun at WNA. From Preschool to Elementary and Intermediate grades (up to grade 8), our students are taught important life skills in a safe, nurturing Christian environment. Our goal is to expand their knowledge and skills while creating lifetime experiences. We understand how hard you work in order to provide for your family and to give your child a quality education. With that in mind, WNA makes every attempt to keep tuition at a reasonable level, lower than comparable Christian schools in the community. Windward Nazarene Academy provides a healthy, moral education, always keeping in mind that each child is unique. Faith-based values are incorporated into the curriculum, a balanced program designed to answer the curiosity of young minds while giving children the confidence to explore; to build strong relationships and grow to be solid, productive, grace-filled members of their families and society. These have been the goals of our preschool since 1967 and continue as we go forward.",
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         /* --------------------- ACTIVES  --------------------- */
         name: "Lanikai Beach",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/lanikai.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/lanikai.jpg",
         category: "actives",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1437,11 +1437,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Sandy Beach",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/sandys.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/sandys.jpg",
         category: "actives",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1454,11 +1454,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Daimond Head Beach",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/daimondheadbeach.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/daimondheadbeach.jpg",
         category: "actives",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1471,11 +1471,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Waimea Bay",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/waimea.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/waimea.jpg",
         category: "actives",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1488,11 +1488,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Kailua Beach",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/kailua.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/kailua.jpg",
         category: "actives",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1505,11 +1505,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Wet N' Wild Water Park",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/wetnwild.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/wetnwild.jpg",
         category: "actives",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1522,11 +1522,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Maunawili Falls Trailhead",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/maunawili.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/maunawili.jpg",
         category: "actives",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1539,11 +1539,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Kokohead Hike",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/kokohead.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/kokohead.jpg",
         category: "actives",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1556,11 +1556,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Daimond Head Hike",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/daimondheadhike.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/daimondheadhike.jpg",
         category: "actives",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1573,11 +1573,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Kayak to Mokulua Islands",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/kayak.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/kayak.jpg",
         category: "actives",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1590,11 +1590,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Hanauma Bay",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/hanauma.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/hanauma.jpg",
         category: "actives",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1607,11 +1607,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Stand Up Paddle Board at Anahulu River",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/anahulu.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/anahulu.jpg",
         category: "actives",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1624,11 +1624,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Pali Lookout",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/pali.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/pali.jpg",
         category: "actives",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1639,13 +1639,12 @@ Item.find({}).remove(function() {
         gender: "Co-ed",
         religion: "Christian",
         town: ["any town", "Kaneohe", "Kailua"],
-        student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Kuliouou Hike",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/kuliouou.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/kuliouou.jpg",
         category: "actives",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1658,11 +1657,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Skydive Hawaii",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/skydive.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/skydive.jpg",
         category: "actives",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1675,11 +1674,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Hawaii Loa Ridge Hike",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/hawaiiloaridge.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/hawaiiloaridge.jpg",
         category: "actives",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1692,11 +1691,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Sea Life Park",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/sealifepark.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/sealifepark.jpg",
         category: "actives",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1709,11 +1708,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Honolulu Zoo",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/zoo.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/zoo.jpg",
         category: "actives",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1726,11 +1725,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Honolulu Aquarium",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/aquarium.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/aquarium.jpg",
         category: "actives",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1743,12 +1742,12 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         /* ------------------- ENRICHMENTS  -------------------- */
         name: "Branch Studios Hawaii",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/branch.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/branch.jpg",
         category: "enrichments",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1761,11 +1760,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Pas De Deux",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/pasdedeux.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/pasdedeux.jpg",
         category: "enrichments",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1778,11 +1777,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Na Maka",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/namaka.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/namaka.jpg",
         category: "enrichments",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1795,11 +1794,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Leahi Swim School",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/leahi.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/leahi.jpg",
         category: "enrichments",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1812,11 +1811,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "Kumon of Hawaii Kai",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/kumon.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/kumon.jpg",
         category: "enrichments",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1829,11 +1828,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         name: "TLC for Kids School",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/TLC.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/TLC.jpg",
         category: "enrichments",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1846,12 +1845,12 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
       }, {
         /* --------------------- CULTURES  ---------------------- */
         name: "Iolani Palace",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/iolani.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/iolani.jpg",
         category: "cultures",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1864,11 +1863,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
     }, {
         name: "Bishop Museum",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/bishop.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/bishop.jpg",
         category: "cultures",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1881,11 +1880,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
     }, {
         name: "Polynesian Culture Center",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/pcc.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/pcc.jpg",
         category: "cultures",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1898,11 +1897,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
     }, {
         name: "Hawaii Children's Discovery Center",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/discovery.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/discovery.jpg",
         category: "cultures",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1915,11 +1914,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
     }, {
         name: "Pacific Aviation Museum",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/aviation.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/aviation.jpg",
         category: "cultures",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1932,11 +1931,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
     }, {
         name: "Hawaii Nature Center",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/nature.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/nature.jpg",
         category: "cultures",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1949,12 +1948,12 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
     }, {
         /* ---------------------- HEALTHS  ---------------------- */
         name: "Dr. Brent Uyeno",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/uyeno.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/uyeno.jpg",
         category: "healths",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1967,11 +1966,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
     }, {
         name: "Dr. Dean Sueda",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/sueda.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/sueda.jpg",
         category: "healths",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -1984,11 +1983,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
     }, {
         name: "Dr. Shigezawa",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/shigezawa.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/shigezawa.jpg",
         category: "healths",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -2001,12 +2000,12 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
     }, {
         /* ---------------------- FOODS  ---------------------- */
         name: "Great Harvest Bakery",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/greatharvest.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/greatharvest.jpg",
         category: "foods",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -2019,11 +2018,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
     }, {
         name: "Liliha Bakery",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/liliha.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/liliha.jpg",
         category: "foods",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -2036,11 +2035,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
     }, {
         name: "Zippy's",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/zippys.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/zippys.jpg",
         category: "foods",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -2053,11 +2052,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
     }, {
         name: "Gyotaku Japanese Restaurant",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/gyotaku.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/gyotaku.jpg",
         category: "foods",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -2070,11 +2069,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
     }, {
         name: "Shokudo Japanese Restaurant",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/shokudo.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/shokudo.jpg",
         category: "foods",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -2087,11 +2086,11 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
     }, {
         name: "Moon Garden",
         yelpName: "windward-nazarene-academy-kaneohe",
-        image: "/assets/images/moon.jpg",
+        image: "https://s3.amazonaws.com/butterbean/butterbean+images/moon.jpg",
         category: "foods",
         address: "45-232 Puaae Road, P.O.Box 1633 Kane'ohe, HI 96744",
         telephone: "(808) 235-8787 ext. 200",
@@ -2104,27 +2103,27 @@ Item.find({}).remove(function() {
         town: ["any town", "Kaneohe", "Kailua"],
         student: ["preschooler", "elementary student", "middle schooler"],
         city: "Kaneohe",
-        logo: "../assets/images/sja-logo.jpg"
+        logo: "https://s3.amazonaws.com/butterbean/butterbean+images/wna-logo.png"
     });
 });
 
-// User.find({}).remove(function() {
-//   User.create({
-//     provider: 'local',
-//     name: 'Test User',
-//     email: 'test@test.com',
-//     password: 'test'
-//   }, {
-//     provider: 'local',
-//     role: 'admin',
-//     name: 'Admin',
-//     email: 'admin@admin.com',
-//     password: 'admin'
-//   }, function() {
-//       console.log('finished populating users');
-//     }
-//   );
-// });
+User.find({}).remove(function() {
+  User.create({
+    provider: 'local',
+    name: 'Test User',
+    email: 'test@test.com',
+    password: 'test'
+  }, {
+    provider: 'local',
+    role: 'admin',
+    name: 'Admin',
+    email: 'admin@admin.com',
+    password: 'admin'
+  }, function() {
+      console.log('finished populating users');
+    }
+  );
+});
 
 
 

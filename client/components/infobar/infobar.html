@@ -1,0 +1,21 @@
+<div class="contactInfo">
+  <h4>{{ objectInside.dataFromDatabase.name }}</h4>
+  <p>{{ objectInside.dataFromDatabase.address }}</p>
+  <p>{{ objectInside.dataFromDatabase.telephone }}</p>
+  <p ng-show="objectInside.dataFromDatabase.website">
+    <a href="http://{{objectInside.dataFromDatabase.website}}" target="_blank">Website</a>
+  </p>
+</div>
+<div class="schoolInfo" ng-show="objectInside.dataFromDatabase.student">
+  <h4>School Information</h4>
+  <p>Grade Levels: {{objectInside.dataFromDatabase.gradeLevels}}</p>
+  <p>Enrollment: {{objectInside.dataFromDatabase.enrollment}}</p>
+  <p>Gender: {{objectInside.dataFromDatabase.gender}}</p>
+  <p>Religious Affiliation: {{objectInside.dataFromDatabase.religion}}</p>
+  <p>Boarding: {{objectInside.dataFromDatabase.boarding}}</p>
+</div>
+<div class="yelpInfo" ng-show="objectInside.dataFromYelp">
+  <h4>Yelp Summary</h4>
+  <p>Rating: {{objectInside.dataFromYelp.rating}}</p>
+  <p><a href="{{objectInside.dataFromYelp.url}}" target="_blank">Yelp Page</a></p>
+</div>

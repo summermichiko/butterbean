@@ -1,0 +1,48 @@
+// FOOTER
+.darker-yellow {
+    height: 8px;
+    width: 100%;
+    background-color: #c7ae20;
+}
+
+footer {
+    background-color: #e0c61a;
+    height: 225px;
+    width: 100%;
+    font-family: Lato;
+    padding-top: 30px;
+}
+
+footer img {
+    width: 200px;
+}
+
+footer p {
+    color: #545454;
+    margin-left: 13px;
+}
+
+footer h2 {
+    font-size: 16px;
+    color: #545454;
+    font-weight: 700;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #328180;
+}
+
+footer a {
+    color: #545454;
+}
