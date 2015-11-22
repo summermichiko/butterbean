@@ -1,185 +1,172 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
-<div class="top-image">
-	<img ng-src="../assets/images/sja-hero.png" alt="" class="img-hero" ng-click="openVideo('lg')">
-		<div>
-		    <script type="text/ng-template" id="videoCtrl.html">
-		        <div class="modal-header">
-		            <h3 class="modal-title">{{ currentItem.name }} video</h3>
-		        </div>
-		        <div class="modal-body">
-		            <iframe width="867" height="480" src="//www.youtube.com/embed/9f8mZv-EkgM" frameborder="0" allowfullscreen></iframe>
-		        </div>
-		        <div class="modal-footer">
-		            <button class="btn closeVideoBtn" ng-click="cancel()">Close</button>
-		        </div>
-		    </script>
-		</div>
-	<div class="container">
-		<div class="logo-wrapper">
-			<img ng-src="{{object.dataFromDatabase.logo}}" class="logo">
-		</div>
-		<h1 class="top-name">{{object.dataFromDatabase.name}}</h1>
-	</div>
-</div>
-<div class="container">
-	<div class="row">
-		<section class="col-md-7 info">
-			<p>{{object.dataFromDatabase.writeUp}}</p>
-		</section>
-		<section class="col-md-5 data">
-				<button class="bookmarkBtn" ng-show="isAdmin()" ng-click="openEdit()">Edit Item</button>
-			    <script type="text/ng-template" id="editItem.html">
-			        <div class="modal-header">
-			            <h3 class="modal-title">Edit This Item</h3>
-			        </div>
-			        <div class="modal-body">
-			            <form ng-submit="editItem()" class="simple-form">
-		                  <div>
-		                      Name: <input type="text" ng-model="formFiller.dataFromDatabase.name">
-		                  </div>
-		                  <div>
-		                      Yelp Name: <input type="text" ng-model="formFiller.dataFromDatabase.yelpName">
-		                  </div>
-		                  <div>
-		                      Image: <input type="text" ng-model="formFiller.dataFromDatabase.image">
-		                  </div>
-		                  <div>
-		                      Category: <input type="text" ng-model="formFiller.dataFromDatabase.category">
-		                  </div>
-		                  <div>
-		                      Address: <input type="text" ng-model="formFiller.dataFromDatabase.address">
-		                  </div>
-		                  <div>
-		                      Website: <input type="text" ng-model="formFiller.dataFromDatabase.website">
-		                  </div>
-		                  <div>
-		                      Grade Levels: <input type="text" ng-model="formFiller.dataFromDatabase.gradeLevels">
-		                  </div>
-		                  <div>
-		                      Enrollment: <input type="text" ng-model="formFiller.dataFromDatabase.enrollment">
-		                  </div>
-		                  <div>
-		                      Boarding: <input type="text" ng-model="formFiller.dataFromDatabase.boarding">
-		                  </div>
-		                  <div>
-		                      Gender: <input type="text" ng-model="formFiller.dataFromDatabase.gender">
-		                  </div>
-		                  <div>
-		                      Religion: <input type="text" ng-model="formFiller.dataFromDatabase.religion">
-		                  </div>
-		                  <div>
-		                      Town: <input type="text" ng-model="formFiller.dataFromDatabase.town">
-		                  </div>
-		                  <div>
-		                      Student: <input type="text" ng-model="formFiller.dataFromDatabase.student">
-		                  </div>
-		                  <div>
-		                      City: <input type="text" ng-model="formFiller.dataFromDatabase.city">
-		                  </div>
-		                  <div>
-		                      Write Up: <textarea rows="10" ng-model="formFiller.dataFromDatabase.writeUp"></textarea>
-		                  </div>
-		                  <div>
-		                      Logo: <input type="text" ng-model="formFiller.dataFromDatabase.logo">
-		                  </div>
-		                  <input class="editingBtn" type="submit" value="Edit">
-                		</form>
-			        </div>
-			    </script>
-
-			<button class="bookmarkBtn" ng-controller="BookmarkModalCtrl" ng-click="open('bookmarkContent.html')">Bookmark It</button>
-			<div ng-controller="BookmarkModalCtrl">
-			    <script type="text/ng-template" id="bookmarkContent.html">
-			        <div class="modal-header">
-			            <h3 class="modal-title">Bookmark This Activity</h3>
-			            <div class="cancelBtn">
-			        		<img ng-src="../assets/images/x.png" ng-click="cancel()"></button>
-			        	</div>
-			        </div>
-			        <div class="modal-body1">
-			        	<img ng-controller="IndividualtemplateCtrl" ng-src="{{object.dataFromDatabase.image}}" alt="">
-			        	<div class="modalText">
-				        	<p class="modalName" ng-controller="IndividualtemplateCtrl">{{object.dataFromDatabase.name}}</p>
-				        	<p class="modalCity" ng-controller="IndividualtemplateCtrl">{{object.dataFromDatabase.city}}</p>
-				        </div>
-			        </div>
-			        <div class="modal-footer">
-			            <button class="btn bookmarkItBtn" ng-click="ok()">Bookmark It</button>
-			        </div>
-			    </script>
-			</div>
-
-			<google-map center="map.center" zoom="map.zoom" pan="true" draggable="true" control="map.control">
-				<marker
-					idKey='marker.id'
-					coords='marker.coords'>
-				</marker>
-			</google-map>
-      <info-bar info-object="object"></info-bar>
-		</section>
-	</div>
-</div>
-
-<!-- <button ng-controller="DoneModalCtrl" ng-click="open('doneContent.html')">Done It</button>
-<div ng-controller="DoneModalCtrl">
-    <script type="text/ng-template" id="doneContent.html">
-        <div class="modal-header">
-            <h3 class="modal-title">What youve done</h3>
-        </div>
-        <div class="modal-body">
-        	<p ng-controller="IndividualtemplateCtrl">{{object.dataFromDatabase.name}}</p>
-        	<img ng-controller="IndividualtemplateCtrl" ng-src="{{object.dataFromDatabase.image}}" alt="">
-        </div>
-        <div class="modal-footer">
-        	<button class="btn btn-warning" ng-click="cancel()">Cancel</button>
-            <button class="btn btn-primary" ng-click="ok()">Mark done</button>
-        </div>
-    </script>
-</div> -->
-<section class="bottomSection">
-	<div class="threeSuggestions container">
-		<h5>You may also like:</h5>
-		<div ng-repeat="item in random" class="col-md-4">
-      <my-item class="suggestionHolder" item-info="item" item-url="getUrl(item)"></my-item>
-      <!-- item.html is nested in my-item directive above -->
-
-			<!-- <a ui-sref="individualTemplate({
-				category: item.category,
-				itemId: item._id
-			})">
-				<img ng-src="{{item.image}}" alt="">
-				<div class="suggestionHolder">
-					<p class="threeItemName">{{item.name}}</p>
-					<p class="itemCity">{{item.city}}</p>
+<div class="top-image img-hero" ng-click="openVideo('lg')"></div>
+<div class="top-section">
+	<div class="container padding-top-30">
+		<div class="row profileIconWrapper">
+			<div class="col-sm-8 col-xs-12">
+				<img class="item-logo" src="{{ object.dataFromDatabase.logo }}">
+				<div class="inline-block">
+					<h1 class="top-name">{{ object.dataFromDatabase.name }}</h1>
+					<p class="light-grey-text">{{ object.dataFromDatabase.address2 }}</p>
+					<p class="light-grey-text">Private, {{object.dataFromDatabase.gradeLevels}}</p>
 				</div>
-			</a> -->
+			</div>
+			<div class="col-sm-4 col-xs-12 CTA-box">
+				<!-- show edit item if admin -->
+				<button class="bookmark-btn" ng-show="isAdmin()" ng-click="openEdit()">Edit Item</button>
+				<!-- show bookmark item if user -->
+				<button class="bookmark-btn" style="border-radius: 2px 2px 0 0;" ng-controller="BookmarkModalCtrl" ng-click="open('bookmarkContent.html')">Bookmark It</button>
+				<div class="minor-CTA">
+					<div class="row padding-top-20 padding-bottom-20">
+						<div class="col-sm-4 col-xs-4 website-link-box">
+							<p ng-show="object.dataFromDatabase.website" class="text-center">
+								<a href="http://{{object.dataFromDatabase.website}}" target="_blank">Website</a>
+							</p>
+						</div>
+						<div class="col-sm-4 col-xs-4 email-link-box">
+							<p ng-show="object.dataFromDatabase.email" class="text-center">
+								<a href="mailto:{{object.dataFromDatabase.email}}" target="_blank">Email</a>
+							</p>
+						</div>
+						<div class="col-sm-4 col-xs-4 yelp-link-box">
+							<p ng-show="object.dataFromDatabase.website" class="text-center">
+								<a href="{{object.dataFromYelp.url}}" target="_blank">Yelp</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="main-content-section">
+	<div class="container">
+		<div class="row">
+			<section class="col-md-8 col-xs-12 info">
+				<div>
+					<div class="inline-block">
+						<img class="section-icon" src="../assets/images/overview3.png">
+					</div>
+					<p class="orange-bold-text inline-block">Overview</p>
+					<p style="margin-bottom: 20px; margin-left: 38px;">{{object.dataFromDatabase.overview1}}</p>
+					<p style="margin-bottom: 50px; margin-left: 38px;">{{object.dataFromDatabase.overview2}}</p>
+				</div>
+				<div>
+					<div class="inline-block">
+						<img class="section-icon" src="../assets/images/facilities3.png">
+					</div>
+					<p class="orange-bold-text inline-block">Facilities</p>
+					<p style="margin-bottom: 10px; margin-left: 38px;">{{object.dataFromDatabase.facilities}}</p>
+					<div class="facilityImagesWrapper">
+						<div class="row topRowWrapper">
+							<div class="col-sm-6 col-xs-12 facility1Wrapper">
+								<div class="facilityImage1"></div>
+							</div>
+							<div class="col-sm-6 col-xs-12 facility2Wrapper">
+								<div class="facilityImage2"></div>
+							</div>
+						</div>
+						<div class="row bottomRowWrapper">
+							<div class="col-sm-4 col-xs-12 facility3Wrapper">
+								<div class="facilityImage3"></div>
+							</div>
+							<div class="col-sm-4 col-xs-12 facility4Wrapper">
+								<div class="facilityImage4"></div>
+							</div>
+							<div class="col-sm-4 col-xs-12 facility5Wrapper">
+								<div class="facilityImage5"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="inline-block">
+						<img class="section-icon" src="../assets/images/extraC3.png">
+					</div>
+					<p class="orange-bold-text inline-block">Extra Curricular Activities</p>
+					<div style="margin-left: 38px;">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 nopadding-left">
+							<h5 class="bold-text">Sports</h5>
+							<ul style="padding-left: 20px;">
+								<li>Baseball</li>
+								<li>Basketball</li>
+								<li>Football</li>
+								<li>Swimming</li>
+								<li>Track and Field</li>
+								<li>Tennis</li>
+								<li>Bowling</li>
+								<li>Volleyball</li>
+							</ul>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 nopadding-left">
+							<h5 class="bold-text">Arts</h5>
+							<ul style="padding-left: 20px;">
+								<li>Concert Choir</li>
+								<li>Orchestra</li>
+								<li>Jazz Band</li>
+								<li>Concert Band</li>
+								<li>Private Music Lessons</li>
+								<li>Theatre Production</li>
+							</ul>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 nopadding-left">
+							<h5 class="bold-text">Clubs</h5>
+							<ul style="padding-left: 20px;">
+								<li>Debate / Mock Trial</li>
+								<li>Annual Yearbook</li>
+								<li>Literary Magazine</li>
+								<li>Robotics and AI</li>
+								<li>Chess</li>
+								<li>Science and Engineering</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="col-md-4 col-xs-12 data">
+				<!-- bookmark modal -->
+				<div ng-controller="BookmarkModalCtrl">
+				    <script type="text/ng-template" id="bookmarkContent.html">
+				        <div class="modal-header">
+				            <h3 class="modal-title">Bookmark This Activity</h3>
+				            <div class="cancelBtn">
+				        		<img ng-src="../assets/images/x.png" ng-click="cancel()"></button>
+				        	</div>
+				        </div>
+				        <div class="modal-body1">
+				        	<img ng-controller="IndividualtemplateCtrl" ng-src="{{object.dataFromDatabase.image}}">
+				        	<div class="modalText">
+					        	<p class="modalName" ng-controller="IndividualtemplateCtrl">{{object.dataFromDatabase.name}}</p>
+					        	<p class="modalCity" ng-controller="IndividualtemplateCtrl">{{object.dataFromDatabase.city}}</p>
+					        </div>
+				        </div>
+				        <div class="modal-footer">
+				            <button class="btn bookmarkItBtn" ng-click="ok()">Bookmark It</button>
+				        </div>
+				    </script>
+				</div>
+				<google-map center="map.center" zoom="map.zoom" pan="true" draggable="true" control="map.control">
+					<marker
+						idKey='marker.id'
+						coords='marker.coords'>
+					</marker>
+				</google-map>
+				<info-bar info-object="object"></info-bar>
+			</section>
+		</div>
+	</div>
+</div>
+<section class="bottom-section">
+	<div class="container">
+		<div class="row">
+			<div class="three-suggestions">
+				<div class="col-xs-12">
+					<p class="header">You might also like...</p>
+				</div>
+				<div ng-repeat="item in random" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<my-item class="suggestionHolder" item-info="item" item-url="getUrl(item)"></my-item>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

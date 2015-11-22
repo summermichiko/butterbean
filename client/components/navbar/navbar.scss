@@ -9,16 +9,15 @@
 }
 
 .navbar-right {
-    width: 450px;
-    font-family: Lato;
+	text-align: right;
+    font-family: Open Sans;
     font-weight: 300;
     font-size: 16px;
-    margin-right: 15px;
 }
 
 .navbar-brand img {
-    width: 170px;
-    margin-top: -12px;
+    width: 140px;
+    margin-top: 5px;
 }
 
 .navbar-right li {
@@ -38,4 +37,29 @@
     font-weight: 300;
     font-size: 16px;
     margin-left: 20px;
+}
+
+.navbar-text {
+	padding-top: 2px;
+}
+
+@media screen and (max-width: 767px) {
+	.navbar-toggle {
+		margin-top: 15px;
+	}
+
+	.navbar-right {
+		text-align: left;
+	}
+
+	.navbar-collapse.collapse {
+		background-color: #fff;
+		z-index: 15000;
+		margin-top: 7px;
+	}
+
+	.navbar-text {
+		padding-left: 15px;
+		padding-top: 2px;
+	}
 }

@@ -38,9 +38,7 @@ exports.create = function (req, res, next) {
  * Get a single user
  */
 exports.show = function (req, res, next) {
-  console.log(req.params);
   var userId = req.params.id;
-  console.log("hey");
   // User.findById(userId, function (err, user) {
   //   user.populate();
   //   console.log(req.user);
@@ -48,11 +46,9 @@ exports.show = function (req, res, next) {
   //   if (!user) return res.send(401);
   //   res.json(req.user);
   // });
-  console.log(userId);
   User.findOne({ _id: userId })
       .populate('bookmarks')
       .exec(function(err, user) {
-        console.log(user);
         res.send(200, user.bookmarks);
       });
 };
@@ -106,15 +102,13 @@ exports.deleteBookmark = function(req, res, next) {
 
   User.findById(userId, function(err, user) {
     var itemToRemove = user.bookmarks.indexOf(itemId);
-    console.log(user.bookmarks);
-    // console.log(itemToRemove);
     user.bookmarks.splice(itemToRemove, 1);
     // user.bookmarks.push(itemId);
     //remove item from array
     user.save(function(err) {
       res.send(200);
     });
-  });  
+  });
 };
 
 exports.addDone = function(req, res, next) {
@@ -141,31 +135,4 @@ exports.me = function(req, res, next) {
 exports.authCallback = function(req, res, next) {
   res.redirect('/');
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

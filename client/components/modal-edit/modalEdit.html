@@ -1,0 +1,56 @@
+<div class="modal-header">
+    <h3 class="modal-title">Edit This Item</h3>
+</div>
+<div class="modal-body">
+    <form ng-submit="editItem()" class="simple-form">
+        <div>
+            Name: <input type="text" ng-model="formFiller.dataFromDatabase.name">
+        </div>
+        <div>
+            Yelp Name: <input type="text" ng-model="formFiller.dataFromDatabase.yelpName">
+        </div>
+        <div>
+            Image: <input type="text" ng-model="formFiller.dataFromDatabase.image">
+        </div>
+        <div>
+            Category: <input type="text" ng-model="formFiller.dataFromDatabase.category">
+        </div>
+        <div>
+            Address: <input type="text" ng-model="formFiller.dataFromDatabase.address">
+        </div>
+        <div>
+            Website: <input type="text" ng-model="formFiller.dataFromDatabase.website">
+        </div>
+        <div>
+            Grade Levels: <input type="text" ng-model="formFiller.dataFromDatabase.gradeLevels">
+        </div>
+        <div>
+            Enrollment: <input type="text" ng-model="formFiller.dataFromDatabase.enrollment">
+        </div>
+        <div>
+            Boarding: <input type="text" ng-model="formFiller.dataFromDatabase.boarding">
+        </div>
+        <div>
+            Gender: <input type="text" ng-model="formFiller.dataFromDatabase.gender">
+        </div>
+        <div>
+            Religion: <input type="text" ng-model="formFiller.dataFromDatabase.religion">
+        </div>
+        <div>
+            Town: <input type="text" ng-model="formFiller.dataFromDatabase.town">
+        </div>
+        <div>
+            Student: <input type="text" ng-model="formFiller.dataFromDatabase.student">
+        </div>
+        <div>
+            City: <input type="text" ng-model="formFiller.dataFromDatabase.city">
+        </div>
+        <div>
+            Write Up: <textarea rows="10" ng-model="formFiller.dataFromDatabase.writeUp"></textarea>
+        </div>
+        <div>
+            Logo: <input type="text" ng-model="formFiller.dataFromDatabase.logo">
+        </div>
+        <input class="editingBtn" type="submit" value="Edit">
+      </form>
+</div>

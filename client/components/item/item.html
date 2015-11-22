@@ -1,9 +1,10 @@
-<div class="testSec">
+<div class="item-wrapper">
   <a ng-href="{{ url }}" target="_blank">
-    <img ng-src="{{ item.image }}" class="itemPic" alt="">
-    <div class="nameHolder">
-      <p class="itemHeader">{{ item.name }}</p>
-      <p class="itemCity">({{ item.city }})</p>
+    <img class="item-pic" style="background-image: url({{ item.image }});">
+    <div class="name-holder">
+      <p class="item-header">{{ item.name }}</p>
+      <p class="item-city">{{ item.address2 }}</p>
+      <p class="item-grades">Private, {{item.gradeLevels}}</p>
     </div>
   </a>
 </div>

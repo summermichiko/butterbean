@@ -1,15 +1,29 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 <section>
 	<div class="tabs">
-		<ul class="categoryMenu container">
-			<li ng-class="show.schools ? 'icon activeClass' : 'icon'" ng-click="showItems('schools')"><img src="../assets/images/school-icon.png">Schools</li>
-			<li ng-class="show.actives ? 'icon activeClass' : 'icon'" ng-click="showItems('actives'); addActive('actives')"><img src="../assets/images/bike-icon.png">Outdoor + Active</li>
-			<li ng-class="show.foods ? 'icon activeClass' : 'icon'" ng-click="showItems('foods'); addActive('foods')"><img src="../assets/images/food-icon.png">Food</li>
-			<li ng-class="show.enrichments ? 'icon activeClass' : 'icon'" ng-click="showItems('enrichments'); addActive('enrichments')"><img src="../assets/images/music-icon.png">Enrichment + Learning</li>
-			<li ng-class="show.cultures ? 'icon activeClass' : 'icon'" ng-click="showItems('cultures'); addActive('cultures')"><img src="../assets/images/museum-icon.png">Culture + History</li>
-			<li ng-class="show.healths ? 'icon activeClass' : 'icon'" ng-click="showItems('healths'); addActive('healths')"><img src="../assets/images/health-icon.png">Health + Wellness</li>
-		</ul>
-	</div><!-- /tabs -->
+		<div class="container">
+			<ul class="category-menu row">
+				<div class="col-sm-2 col-xs-12">
+					<li ng-class="show.schools ? 'icon activeClass' : 'icon'" ng-click="showItems('schools')"><img src="../assets/images/school-icon.png">Schools</li>
+				</div>
+				<div class="col-sm-2 col-xs-12">
+					<li ng-class="show.actives ? 'icon activeClass' : 'icon'" ng-click="showItems('actives'); addActive('actives')"><img src="../assets/images/bike-icon.png">Outdoor + Active</li>
+				</div>
+				<div class="col-sm-2 col-xs-12">
+					<li ng-class="show.foods ? 'icon activeClass' : 'icon'" ng-click="showItems('foods'); addActive('foods')"><img src="../assets/images/food-icon.png">Food</li>
+				</div>
+				<div class="col-sm-2 col-xs-12">
+					<li ng-class="show.enrichments ? 'icon activeClass' : 'icon'" ng-click="showItems('enrichments'); addActive('enrichments')"><img src="../assets/images/music-icon.png">Enrichment + Learning</li>
+				</div>
+				<div class="col-sm-2 col-xs-12">
+					<li ng-class="show.cultures ? 'icon activeClass' : 'icon'" ng-click="showItems('cultures'); addActive('cultures')"><img src="../assets/images/museum-icon.png">Culture + History</li>
+				</div>
+				<div class="col-sm-2 col-xs-12">
+					<li ng-class="show.healths ? 'icon activeClass' : 'icon'" ng-click="showItems('healths'); addActive('healths')"><img src="../assets/images/health-icon.png">Health + Wellness</li>
+				</div>
+			</ul>
+		</div>
+	</div>
 </section>
 
 <div id="top" ng-show="show.schools">
@@ -58,9 +72,13 @@
 		</form>
 	</div>
 
-	<div class="container">
-		<div class="col-md-4 listSec" ng-repeat="school in data.schools | filter:search:strict">
-      <my-item item-info="school" item-url="getUrl('schools', school)"></my-item>
+	<div class="item-list-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-xs-12 list-sec" ng-repeat="school in data.schools | filter:search:strict">
+					<my-item item-info="school" item-url="getUrl('schools', school)"></my-item>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -111,9 +129,13 @@
 		</form>
 	</div>
 
-	<div class="container">
-		<div class="col-md-4 listSec" ng-repeat="active in data.actives">
-			<my-item item-info="active" item-url="getUrl('actives', active)"></my-item>
+	<div class="item-list-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-xs-12 list-sec" ng-repeat="active in data.actives">
+					<my-item item-info="active" item-url="getUrl('actives', active)"></my-item>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -176,9 +198,13 @@
 		</form>
 	</div>
 
-	<div class="container">
-		<div class="col-md-4 listSec" ng-repeat="food in data.foods">
-			<my-item item-info="food" item-url="getUrl('foods', food)"></my-item>
+	<div class="item-list-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-xs-12 list-sec" ng-repeat="food in data.foods">
+					<my-item item-info="food" item-url="getUrl('foods', food)"></my-item>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -235,9 +261,13 @@
 			<div class="nl-overlay"></div>
 		</form>
 	</div>
-	<div class="container">
-		<div class="col-md-4 listSec" ng-repeat="enrichment in data.enrichments">
-			<my-item item-info="enrichment" item-url="getUrl('enrichments', enrichment)"></my-item>
+	<div class="item-list-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-xs-12 list-sec" ng-repeat="enrichment in data.enrichments">
+					<my-item item-info="enrichment" item-url="getUrl('enrichments', enrichment)"></my-item>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -293,9 +323,13 @@
 			<div class="nl-overlay"></div>
 		</form>
 	</div>
-	<div class="container">
-		<div class="col-md-4 listSec" ng-repeat="culture in data.cultures">
-			<my-item item-info="culture" item-url="getUrl('cultures', culture)"></my-item>
+	<div class="item-list-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-xs-12 list-sec" ng-repeat="culture in data.cultures">
+					<my-item item-info="culture" item-url="getUrl('cultures', culture)"></my-item>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -344,15 +378,19 @@
 			<div class="nl-overlay"></div>
 		</form>
 	</div>
-	<div class="container">
-		<div class="col-md-4 listSec" ng-repeat="health in data.healths">
-			<my-item item-info="health" item-url="getUrl('healths', health)"></my-item>
+	<div class="item-list-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-xs-12 list-sec" ng-repeat="health in data.healths">
+					<my-item item-info="health" item-url="getUrl('healths', health)"></my-item>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
-<div id="scrollArea" class="container">
+<!-- <div id="scrollArea" class="container">
     <a ng-click="gotoTop()"><img src="../assets/images/arrowUp.png"></a>
-</div>
+</div> -->
 
 
 

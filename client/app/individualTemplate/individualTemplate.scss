@@ -1,65 +1,283 @@
-// TOP IMAGE
-.top-image {
-	width: 100%;
-	margin-bottom: 30px;
+div, p, h1, h2, h3, h4, h5, a, button, body, header, footer, section {
+	font-family: Open Sans;
+}
+p {
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 300;
+	margin-bottom: 0;
+}
+h4 {
+	font-size: 18px;
+	font-weight: 500;
+}
+.light-grey-text {
+	color: #82888a;
+}
+.orange-bold-text {
+	color: #e5a464;
+	font-weight: 700 !important;
+}
+.bold-text {
+	font-weight: 700 !important;
+}
+.inline-block {
+	display: inline-block;
+}
+.padding-top-20 {
+	padding-top: 20px;
+}
+.padding-top-30 {
+	padding-top: 30px;
+}
+.padding-bottom-20 {
+	padding-bottom: 20px;
+}
+.nopadding-left {
+	padding-left: 0;
 }
 
+// top section
 .img-hero {
-	width: 100%;
+	background-image: url('../assets/images/punahouBanner4.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
 	z-index: 1;
 	cursor: pointer;
+	height: 410px;
 }
 
-.logo-wrapper {
-	height: 180px;
-	width: 180px;
-	background-color: #e0c61a;
-	margin-top: -95px;
-	z-index: 100;
-	float: left;
-	position: relative;
+.top-section {
+	background-color: #f5f5f5;
+	height: 170px;
 }
 
-.logo {
-	height: 160px;
-	width: 160px;
-	z-index: 1000;
-	margin-top: 10px;
-	margin-left: 10px;
-	float: left;
+.item-logo {
+	height: 90px;
+	margin-top: -75px;
+	margin-right: 15px;
 }
 
 .top-name {
-	margin-top: -55px;
-	margin-left: 200px;
 	z-index: 100;
-	color: #fff;
+	color: #545454;
+	margin-top: 0;
+	font-size: 32px;
+	margin-bottom: 4px;
 }
 
-// VIDEO MODAL
+.CTA-box {
+	margin-top: -93px;
+}
+
+.bookmark-btn {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	height: 63px;
+	line-height: 63px;
+	margin-bottom: 0;
+	display: block;
+	border-radius: 2px;
+	font-size: 20px;
+	background-color: #124D92;
+	opacity: 0.88;
+	border: none;
+	font-weight: 300;
+	transition-property: background;
+	transition-duration: 0.15s;
+	transition-timing-function: linear;
+	color: #fff;
+	text-align: center;
+}
+
+.minor-CTA {
+	border: 1px solid #eee;
+	background-color: #fff;
+	width: 100%;
+	border-radius: 0 0 2px 2px;
+}
+
+.website-link-box {
+	padding-right: 0;
+	border-right: 1px solid #d3d6d6;
+}
+
+.email-link-box {
+	padding-left: 0;
+	padding-right: 0;
+	border-right: 1px solid #d3d6d6;
+}
+
+.yelp-link-box {
+	padding-left: 0;
+}
+
+// main content section
+.main-content-section {
+	background-color: #fff;
+	border-top: 1px solid #dce0e0;
+	border-bottom: 1px solid #dce0e0;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.section-icon {
+	height: 25px;
+	width: 25px;
+	margin-right: 8px;
+}
+
+// facility Images
+.facilityImagesWrapper {
+		margin-bottom: 50px;
+		margin-left: 38;
+	}
+
+.topRowWrapper {
+	margin-bottom: 2px;
+}
+
+.facilityImage1 {
+	background-image: url('../assets/images/facility3.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 260px;
+	width: 100%;
+}
+
+.facility1Wrapper {
+	padding-right: 1px;
+}
+
+.facilityImage2 {
+	background-image: url('../assets/images/facility7.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 260px;
+	width: 100%;
+}
+
+.facility2Wrapper {
+	padding-left: 1px;
+}
+
+.facilityImage3 {
+	background-image: url('../assets/images/facility6.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 175px;
+	width: 100%;
+}
+
+.facility3Wrapper {
+	padding-right: 1px;
+}
+
+.facilityImage4 {
+	background-image: url('../assets/images/facility8.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 175px;
+	width: 100%;
+}
+
+.facility4Wrapper {
+	padding-left: 1px;
+	padding-right: 1px;
+}
+
+.facilityImage5 {
+	background-image: url('../assets/images/facility9.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 175px;
+	width: 100%;
+}
+
+.facility5Wrapper {
+	padding-left: 1px;
+}
+
+.main-content-section li {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+// side bar section
+.angular-google-map-container {
+	height: 300px;
+	width: 100%;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.contact-info {
+	margin-top: 0px;
+	width: 100%;
+	padding-top: 15px;
+	padding-left: 0;
+}
+
+.school-info {
+	width: 100%;
+	padding-top: 15px;
+	padding-left: 0;
+}
+
+.yelp-info {
+	width: 100%;
+	padding-top: 15px;
+	padding-left: 0;
+}
+
+// three suggestions section
+.bottom-section {
+	background-color: #f5f5f5;
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+.bottom-section a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.three-suggestions .header {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+
+// MODALS
+// video modal
 .closeVideoBtn {
 	border-radius: 0px;
 	background-color: #e0c61a;
 	color: #fff;
-	font-family: Lato;
 	font-size: 20px;
 	font-weight: 300;
 	padding: 10px 20px;
 }
 
-//EDIT ITEM MODAL
+//edit item modal
 .editingBtn {
 	border-radius: 0px;
 	background-color: #31989a;
 	color: #fff;
-	font-family: Lato;
 	font-size: 20px;
 	font-weight: 300;
 	padding: 10px 20px;
 	border: none;
 }
 
-// BOOKMARK MODAL
+// bookmark modal
 .modal-header {
 	border-bottom: 0;
 }
@@ -93,7 +311,6 @@
 }
 
 .modalName{
-	font-family: Lato;
 	font-size: 20px;
 	padding-top: 15px;
 	padding-left: 210px;
@@ -102,7 +319,6 @@
 }
 
 .modalCity {
-	font-family: Lato;
 	font-size: 16px;
 	font-weight: 300;
 	padding-left: 210px;
@@ -122,141 +338,91 @@
 	border-radius: 0px;
 	background-color: #31989a;
 	color: #fff;
-	font-family: Lato;
 	font-size: 20px;
 	font-weight: 300;
 	padding: 10px 20px;
 }
 
-// INFO SECTION
-.info {
-	margin-top: 20px;
-	margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+	.top-section {
+		height: 330px;
+	}
+	.CTA-box {
+		margin-top: 30px;
+	}
+	.angular-google-map-container {
+		margin-top: 50px;
+	}
+
+
+// FINISH THIS
+	.facilityImagesWrapper {
+		margin-left: 0;
+	}
+	.topRowWrapper {
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-bottom: 0;
+	}
+	.facilityImage1 {
+		height: 220px;
+	}
+	.facility1Wrapper {
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-bottom: 15px;
+	}
+
+	.facilityImage2 {
+		height: 220px;
+	}
+
+	.facility2Wrapper {
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-bottom: 15px;
+	}
+
+	.facilityImage3 {
+		height: 220px;
+	}
+
+	.facility3Wrapper {
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-bottom: 15px;
+	}
+
+	.facilityImage4 {
+		height: 220px;
+	}
+
+	.facility4Wrapper {
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-bottom: 15px;
+	}
+
+	.facilityImage5 {
+		height: 220px;
+	}
+
+	.facility5Wrapper {
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-bottom: 15px;
+	}
+
+//  FINISH THIS
+
+
+
+
 }
 
-.info p {
-	font-family: Lato;
-	font-weight: 300;
-	text-align: justify;
-	font-size: 20px;
+@media screen and (max-width: 991px) {
+	.angular-google-map-container {
+		margin-top: 50px;
+	}
 }
-
-// DATA SECTION
-.data {
-	margin-top: 25px;
-	margin-bottom: 60px;
-}
-
-//BOOKMARK BUTTON
-.bookmarkBtn {
-	margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 63px;
-    line-height: 63px;
- 	margin-bottom: 15px;
-    display: block;
-    border-radius: 0;
-    font-size: 25px;
-    background-color: #e0c61a;
-    border: none;
-    font-family: Lato;
-    font-weight: 300;
-    transition-property: background;
-    transition-duration: 0.15s;
-    transition-timing-function: linear;
-    color: #fff;
-    text-align: center;
-}
-
-.bottomBtn:hover {
-    background-color: #328180;
-    text-decoration: none;
-}
-
-// GOOGLE MAP
-.angular-google-map-container {
-	height: 300px;
-	width: 100%;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-}
-
-// CONTACT INFO
-.contactInfo {
-	margin-top: 0px;
-	width: 100%;
-	background-color: #eee;
-	padding: 15px;
-	margin-bottom: 15px;
-	font-family: Lato;
-}
-
-.contactInfo p {
-	line-height: 0.75em;
-	font-size: 16px;
-	font-weight: 300;
-}
-
-// SCHOOL INFO
-.schoolInfo {
-	width: 100%;
-	background-color: #eee;
-	padding: 15px;
-	margin-bottom: 15px;
-	font-family: Lato;
-}
-
-.schoolInfo p {
-	line-height: 0.75em;
-	font-size: 16px;
-	font-weight: 300;
-}
-
-// YELP INFO
-.yelpInfo {
-	width: 100%;
-	background-color: #eee;
-	padding: 15px;
-	margin-bottom: 15px;
-	font-family: Lato;
-}
-
-.yelpInfo p {
-	line-height: 0.75em;
-	font-size: 16px;
-	font-weight: 300;
-}
-
-// BOTTOM THREE SUGGESTIONS
-.bottomSection {
-	background-color: #eee;
-	padding-top: 40px;
-	padding-bottom: 60px;
-}
-
-.bottomSection a {
-	text-decoration: none;
-	cursor: pointer;
-}
-
-.threeSuggestions h5 {
-	color: #545454;
-	font-family: Lato;
-	font-weight: 300;
-	font-size: 20px;
-	margin-left: 10px;
-	margin-bottom: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
 

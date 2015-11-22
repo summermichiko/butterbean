@@ -1,67 +1,76 @@
-/* ITEM LISTING SECTION */
-.testSec {
-  margin-bottom: 30px;
+// item listing section
+.item-wrapper {
+	margin-bottom: 30px;
 }
 
-.itemPic {
-  width: 320px;
-  height: 200px;
-  display: block;
-  margin: 0 auto;
+.item-pic {
+	width: 100%;
+	height: 200px;
+	display: block;
+	margin: 0 auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
-.nameHolder {
-  width: 320px;
-  height: 115px;
-  background-color: #eee;
+.item-header {
+	max-width: 90%;
+	margin: 0 auto;
+	font-family: Open Sans;
+	font-weight: 500;
+	font-size: 16px;
+	color: #e5a464;
+	padding-top: 15px;
+	text-decoration: none;
+	line-height: 1.2em;
 }
 
-.itemHeader {
-  max-width: 90%;
-  margin: 0 auto;
-  font-family: Lato;
-  font-weight: 500;
-  font-size: 20px;
-  color: #31989a;
-  padding-top: 15px;
-  text-decoration: none;
-  line-height: 1.2em;
+.list-sec {
+	text-decoration: none;
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
 }
 
-.listSec {
-  -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
+.list-sec:hover {
+	text-decoration: none;
+	-webkit-transform: scale(1.02);
+	transform: scale(1.02);
 }
 
-.listSec:hover {
-  text-decoration: none;
-  -webkit-transform: scale(1.025);
-    transform: scale(1.025);
+.list-sec a:hover {
+	text-decoration: none;
 }
 
-.listSec a:hover {
-  text-decoration: none;
+.item-city {
+	max-width: 90%;
+	margin: 0 auto;
+	font-family: Open Sans;
+	font-weight: 300;
+	font-size: 16px;
+	color: #545454;
+	text-decoration: none;
 }
 
-.itemCity {
-  max-width: 90%;
-  margin: 0 auto;
-  font-family: Lato;
-  font-weight: 300;
-  font-size: 16px;
-  color: #545454;
-  text-decoration: none;
+.item-grades {
+	max-width: 90%;
+	margin: 0 auto;
+	margin-top: -5px;
+	font-family: Open Sans;
+	font-weight: 300;
+	font-size: 16px;
+	color: #545454;
+	text-decoration: none;
 }
 
 /* Individual View of 3 Randoms */
-.suggestionHolder .nameHolder {
-  width: 320px;
-  height: 115px;
-  background-color: #fff;
+.suggestionHolder .name-holder {
+	width: 100%;
+	height: 125px;
+	background-color: #fff;
 }
 
 

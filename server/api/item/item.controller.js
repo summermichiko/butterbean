@@ -3,7 +3,7 @@
 var _ = require('lodash');
 var Item = require('./item.model');
 var yelp = require("yelp").createClient({
-  consumer_key: "v7_TAw6KHkoesARYVYOaMg", 
+  consumer_key: "v7_TAw6KHkoesARYVYOaMg",
   consumer_secret: "896Ra6s03FsrlJRduyu8luSYe74",
   token: "UJTQZ4OV8T0Ip17pdWiZry4-_xBirvPU",
   token_secret: "bcayaOV65VnOsA1_QX8M0Xtn2mU"
@@ -12,7 +12,6 @@ var async = require('async');
 
 // Get list of items
 exports.index = function(req, res) {
-  console.log("hiii");
   Item.find({}, function (err, items) {
     if(err) { return handleError(res, err); }
     return res.json(200, items);
@@ -29,8 +28,8 @@ exports.show = function(req, res) {
   var getItemFromDatabase = function(done) {
     Item.findById(itemId, function(err, dataFromDatabase) {
       if(err) { return handleError(res, err); }
-      if(!dataFromDatabase) { 
-        return res.send(404); 
+      if(!dataFromDatabase) {
+        return res.send(404);
       }
       dataFromDB = dataFromDatabase;
       done(null, "done getting an item from database");
@@ -39,7 +38,6 @@ exports.show = function(req, res) {
 
   var getItemFromYelp = function(done) {
     var yelpName = dataFromDB.yelpName;
-    console.log(yelpName);
     yelp.business(yelpName, function(err, dataFromYelp) {
       if (err) {
         allData = {
@@ -50,9 +48,8 @@ exports.show = function(req, res) {
         allData = {
           dataFromDatabase: dataFromDB,
           dataFromYelp: dataFromYelp
-        };  
+        };
       }
-      console.log(allData.dataFromYelp);
 
       done(null, "done getting an item from yelp");
     });
@@ -67,10 +64,8 @@ exports.show = function(req, res) {
 
 // Creates a new item in the DB.
 exports.create = function(req, res) {
-  console.log(req.body);
   Item.create(req.body, function(err, item) {
     if(err) { return handleError(res, err); }
-    console.log(item);
     return res.json(201, item);
   });
 };
@@ -104,12 +99,3 @@ exports.destroy = function(req, res) {
 function handleError(res, err) {
   return res.send(500, err);
 }
-
-
-
-
-
-
-
-
-

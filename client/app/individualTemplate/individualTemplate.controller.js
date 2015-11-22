@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('tripplannerAngularApp')
-  .controller('IndividualtemplateCtrl', function ($scope, $stateParams, $http, $modal, $log, Auth) {
+  .controller('IndividualtemplateCtrl', function ($scope, $stateParams, $http, $modal, $log, Auth, ModalEdit, ModalVideo) {
     var itemId = $stateParams.itemId;
     var category = $stateParams.category;
 
@@ -17,6 +17,7 @@ angular.module('tripplannerAngularApp')
     };
 
     $scope.isAdmin = Auth.isAdmin;
+
     $scope.map = {
       center: {
         latitude: 0,
@@ -27,16 +28,16 @@ angular.module('tripplannerAngularApp')
     };
 
     $scope.marker = {
-            id:0,
-            coords: {
-                latitude: 0,
-        		longitude: 0
-            }
-        };
+        id:0,
+        coords: {
+            latitude: 0,
+    		longitude: 0
+        }
+    };
 
+    //getting all items to display on planner view
     $http.get('/api/items/').success(function(allItems) {
       $scope.allItems = allItems;
-      console.log($scope.allItems);
       var filteredItems = [];
 
       for(var i=0; i<allItems.length; i++) {
@@ -44,7 +45,6 @@ angular.module('tripplannerAngularApp')
           filteredItems.push(allItems[i]);
         }
       }
-      console.log(filteredItems);
 
       var lower_bound = 0;
       var upper_bound = filteredItems.length-1;
@@ -61,12 +61,11 @@ angular.module('tripplannerAngularApp')
           for(var i = 0; i < unique_random_numbers.length; i++) {
             randomItemArray.push(filteredItems[unique_random_numbers[i]]);
           }
-          console.log(randomItemArray);
           return randomItemArray;
       }();
-
     });
 
+  //getting individual item based on its id
     $http.get('/api/items/' + itemId).success(function(allData) {
     	var geocoder = new google.maps.Geocoder();
 
@@ -77,8 +76,8 @@ angular.module('tripplannerAngularApp')
 
 	    	geocoder.geocode({ 'address': address }, function(results, status) {
 	    		// console.log(results);
-	    		$scope.map.control.getGMap().setZoom(15);
-    			$scope.map.control.refresh({latitude: results[0].geometry.location.k, longitude: results[0].geometry.location.B});
+	    		// $scope.map.control.getGMap().setZoom(15);
+    			//$scope.map.control.refresh({latitude: results[0].geometry.location.k, longitude: results[0].geometry.location.B});
     			$scope.marker = {
 	    			id: 0,
 	    			coords: {
@@ -91,42 +90,52 @@ angular.module('tripplannerAngularApp')
 	    codeAddress();
     });
 
-    $scope.openEdit = function (size) {
-      var modalInstance = $modal.open({
-        templateUrl: 'editItem.html',
-        controller: 'EditItemInstanceCtrl',
-        size: size,
-        resolve: {
-          formFiller: function () {
-            return $scope.object;
-          }
-        }
-      });
+    // $scope.openEdit = function (size) {
+    //   var modalInstance = $modal.open({
+    //     templateUrl: 'editItem.html',
+    //     controller: 'EditItemInstanceCtrl',
+    //     size: size,
+    //     resolve: {
+    //       formFiller: function () {
+    //         return $scope.object;
+    //       }
+    //     }
+    //   });
 
-      modalInstance.result.then(function (selectedItem) {
-        $scope.selected = selectedItem;
-      }, function () {
-        $log.info('Modal dismissed at: ' + new Date());
-      });
+    //   modalInstance.result.then(function (selectedItem) {
+    //     $scope.selected = selectedItem;
+    //   }, function () {
+    //     $log.info('Modal dismissed at: ' + new Date());
+    //   });
+    //
+
+    $scope.openEdit = function() {
+      ModalEdit.open($scope.object, $scope.selected);
+    // connected with modalEdit.service.js (starting at line 4)
     };
 
-    $scope.openVideo = function (size) {
-      var modalInstance = $modal.open({
-        templateUrl: 'videoCtrl.html',
-        controller: 'VideoInstanceCtrl',
-        size: size,
-        resolve: {
-          currentItem: function () {
-            return $scope.object;
-          }
-        }
-      });
-      modalInstance.result.then(function (selectedItem) {
-        $scope.selected = selectedItem;
-      }, function () {
-        $log.info('Modal dismissed at: ' + new Date());
-      });
+    $scope.openVideo = function(size) {
+      ModalVideo.openVideo($scope.object, size);
+    // connected with modalEdit.service.js (starting at line 4)
     };
+
+    // $scope.openVideo = function (size) {
+    //   var modalInstance = $modal.open({
+    //     templateUrl: 'videoCtrl.html',
+    //     controller: 'VideoInstanceCtrl',
+    //     size: size,
+    //     resolve: {
+    //       currentItem: function () {
+    //         return $scope.object;
+    //       }
+    //     }
+    //   });
+    //   modalInstance.result.then(function (selectedItem) {
+    //     $scope.selected = selectedItem;
+    //   }, function () {
+    //     $log.info('Modal dismissed at: ' + new Date());
+    //   });
+    // };
 
   }); //closing IndividualTemplateCtrl
 
@@ -135,7 +144,6 @@ var BookmarkModalCtrl = /*@ngInject*/ function ($scope, $modal, $log, Auth, $sta
   $scope.userId = Auth.getCurrentUser()._id;
   $scope.itemId = $stateParams.itemId
 
-  console.log("this is userid from bookmarkmodalctrl: ", $scope.userId);
   $scope.open = function (templateUrl) {
     var modalInstance = $modal.open({
       templateUrl: 'bookmarkContent.html',
@@ -158,82 +166,67 @@ var BookmarkModalCtrl = /*@ngInject*/ function ($scope, $modal, $log, Auth, $sta
 };
 var BookmarkModalInstanceCtrl = /*@ngInject*/ function ($scope, $modalInstance, currentUserId, currentItemId, $http, Auth) {
   var userId = Auth.getCurrentUser()._id;
-  // console.log("this is userid from bookmarkmodalinstane: ", userId);
+  // console.log("this is userid from bookmarkmodalinstance: ", userId);
   $scope.name = "";
   $scope.selected = {
     item: $scope.name
   };
   $scope.ok = function () {
-    // $http.get("/api/items/" + currentItemId).success(function(resultObj) {
-      $http.put("/api/users/" + userId + "/addbookmark", {itemId: currentItemId}).success(function() {
-        $modalInstance.close($scope.selected.item);
-      });
-  };
-  $scope.cancel = function () {
-    $modalInstance.dismiss('cancel');
-  };
-};
-
-var EditItemInstanceCtrl = /*@ngInject*/ function ($scope, $modalInstance, $http, formFiller) {
-  $scope.formFiller = formFiller;
-  console.log($scope.formFiller);
-
-  $scope.cancel = function () {
-    $modalInstance.dismiss('cancel');
-  };
-
-  $scope.editItem = function() {
-    $http.put('/api/items/' + $scope.formFiller.dataFromDatabase._id, $scope.formFiller.dataFromDatabase).success(function() {
-      $modalInstance.close();
+    $http.put("/api/users/" + userId + "/addbookmark", {itemId: currentItemId}).success(function() {
+      $modalInstance.close($scope.selected.item);
     });
   };
-};
-
-var VideoInstanceCtrl = /*@ngInject*/ function ($scope, $modalInstance, currentItem) {
-  console.log("this is the current item", currentItem);
-  $scope.currentItem = currentItem;
-  $scope.ok = function () {
-    // $modalInstance.close($scope.selected.item);
-  };
-
   $scope.cancel = function () {
     $modalInstance.dismiss('cancel');
   };
 };
 
 
-var DoneModalCtrl = /*@ngInject*/ function ($scope, $modal, $log) {
-  $scope.items = ['item1', 'item2', 'item3'];
-  $scope.open = function (templateUrl) {
-    var modalInstance = $modal.open({
-      templateUrl: 'doneContent.html',
-      controller: 'DoneModalInstanceCtrl',
-      resolve: {
-        items: function () {
-          return $scope.items;
-        }
-      }
-    });
-    modalInstance.result.then(function (selectedItem) {
-      $scope.selected = selectedItem;
-    }, function () {
-      $log.info('Modal dismissed at: ' + new Date());
-    });
-  };
-};
+// var VideoInstanceCtrl = /*@ngInject*/ function ($scope, $modalInstance, currentItem) {
+//   console.log("this is the current item", currentItem);
+//   $scope.currentItem = currentItem;
+//   $scope.ok = function () {
+//     // $modalInstance.close($scope.selected.item);
+//   };
 
-var DoneModalInstanceCtrl = /*@ngInject*/ function ($scope, $modalInstance, items) {
-  $scope.items = items;
-  $scope.selected = {
-    item: $scope.items[0]
-  };
-  $scope.ok = function () {
-    $modalInstance.close($scope.selected.item);
-  };
-  $scope.cancel = function () {
-    $modalInstance.dismiss('cancel');
-  };
-};
+//   $scope.cancel = function () {
+//     $modalInstance.dismiss('cancel');
+//   };
+// };
+
+// NOT USED YET
+// var DoneModalCtrl = /*@ngInject*/ function ($scope, $modal, $log) {
+//   $scope.items = ['item1', 'item2', 'item3'];
+//   $scope.open = function (templateUrl) {
+//     var modalInstance = $modal.open({
+//       templateUrl: 'doneContent.html',
+//       controller: 'DoneModalInstanceCtrl',
+//       resolve: {
+//         items: function () {
+//           return $scope.items;
+//         }
+//       }
+//     });
+//     modalInstance.result.then(function (selectedItem) {
+//       $scope.selected = selectedItem;
+//     }, function () {
+//       $log.info('Modal dismissed at: ' + new Date());
+//     });
+//   };
+// };
+
+// var DoneModalInstanceCtrl = /*@ngInject*/ function ($scope, $modalInstance, items) {
+//   $scope.items = items;
+//   $scope.selected = {
+//     item: $scope.items[0]
+//   };
+//   $scope.ok = function () {
+//     $modalInstance.close($scope.selected.item);
+//   };
+//   $scope.cancel = function () {
+//     $modalInstance.dismiss('cancel');
+//   };
+// };
 
 
 

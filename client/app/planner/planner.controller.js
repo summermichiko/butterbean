@@ -48,7 +48,7 @@ angular.module('tripplannerAngularApp')
         });
       }
     };
-
+      // end of factory, returns the Planner object
     return Planner;
   })
   .controller('PlannerCtrl', function ($scope, $http, User, $location, $anchorScroll, Planner) {

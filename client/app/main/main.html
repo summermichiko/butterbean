@@ -3,12 +3,10 @@
 		<img ng-src="../assets/images/butterbean-white-logo.png">
 		<div class="container">
 		  <div class="row">
-		    <div class="col-md-8 col-md-offset-2 text-center inner">
-		      <h1 class="main-header">Discover amazing activities
-				<br>
-		      	with your kids.</h1>
+		    <div class="col-xs-12 text-center inner">
+		      <h1 class="main-header">Discover amazing activities<br>with your kids</h1>
 		      <a href="/signup" class="top-link">Join today</a>
-		      <a href="/login" class="bottom-link">(or Sign In)</a>
+		      <a href="/login" class="bottom-link">or Sign In</a>
 		    </div>
 		  </div>
 		</div>
@@ -16,58 +14,53 @@
 </header>
 <section class="icons">
   <div class="container">
-	  <div class="col-md-12">
-	    <h1 class="section-header">Find In-Depth Profiles</h1>
+	  <div class="row">
+	  	<div class="col-xs-12">
+	  		<h1 class="section-header">Find In-Depth Profiles</h1>
+	  	</div>
 	    <div>
-
-	      <div class="col-md-2 icon-list">
+	      <div class="col-sm-2 col-xs-12 icon-list">
 	        <div>
 	          <i><img ng-src="../assets/images/school-icon-circle.png"></i>
 	        </div>
 	        <h2>Schools</h2>
-	        <p>Preschools, Elementary, Middle and High Schools.</p>
+	        <p>preschools, elementary, middle and high schools</p>
 	      </div>
-
-	      <div class="col-md-2 icon-list">
+	      <div class="col-sm-2 col-xs-12 icon-list">
 	        <div>
 	          <i><img ng-src="../assets/images/active-icon-circle.png"></i>
 	        </div>
 	        <h2>Outdoor + Active</h2>
-	        <p>Hikes, Beachs, Parks and Paid Attractions.</p>
+	        <p>hikes, beachs, parks and paid attractions</p>
 	      </div>
-
-	      <div class="col-md-2 icon-list">
+	      <div class="col-sm-2 col-xs-12 icon-list">
 	        <div>
 	          <i><img ng-src="../assets/images/food-icon-circle.png"></i>
 	        </div>
 	        <h2>Food</h2>
-	        <p>Restaurants, Bakeries, and Food Trucks.</p>
+	        <p>restaurants, bakeries, and food trucks</p>
 	      </div>
-
-	      <div class="col-md-2 icon-list">
+	      <div class="col-sm-2 col-xs-12 icon-list">
 	        <div>
 	          <i><img ng-src="../assets/images/music-icon-circle.png"></i>
 	        </div>
 	        <h2>Enrichment + Learning</h2>
-	        <p>Sports, Language, and Music Programs.</p>
+	        <p>sports, language, and music programs</p>
 	      </div>
-
-	      <div class="col-md-2 icon-list">
+	      <div class="col-sm-2 col-xs-12 icon-list">
 	        <div>
 	          <i><img ng-src="../assets/images/museum-icon-circle.png"></i>
 	        </div>
 	        <h2>Culture + History</h2>
-	        <p>Museums, Animal Exhibits, Cultural Activities.</p>
+	        <p>museums, animal exhibits, cultural activities</p>
 	      </div>
-
-	      <div class="col-md-2 icon-list">
+	      <div class="col-sm-2 col-xs-12 icon-list">
 	        <div>
 				<i><img ng-src="../assets/images/health-icon-circle.png"></i>
 	        </div>
 	        <h2>Health + Wellness</h2>
-	        <p>Pediatricians, Dentists, Therapists, and Health Services.</p>
+	        <p>pediatricians, dentists, therapists, and health services</p>
 	      </div>
-
 	      <div class="clearfix"></div>
 	    </div>
 	  </div>
@@ -75,64 +68,72 @@
 </section>
 <section class="video-pattern">
   <div class="container video-section">
-  	<h1 class="section-header">More Than Just Facts and Figures</h1>
-  	<p>Students thrive under a teacher who really cares. Food tastes better when served with a warm smile. We work hard to spotlight more than the dry numbers, but the people that make up our featured organizations. Example spotlights:</p>
-  	<!-- <iframe width="853" height="480" src="//www.youtube.com/embed/zTPRBnCm12M" frameborder="0" allowfullscreen></iframe> -->
-	  <div>
-	    <carousel interval="myInterval">
-	      <slide ng-repeat="slide in slides" active="slide.active" style="height: 400px" ng-click="/signup">
-          <a ng-href="/signup">
-  	        <img ng-src="{{slide.image}}" style="margin:auto;">
-  	        <div class="carousel-caption">
-  	          <p class="topCaption">{{slide.text}}</p>
-              <p class="bottomCaption">{{slide.description}}</p>
-              <img src="/assets/images/playButton.png">
-  	        </div>
-          </a>
-	      </slide>
-	    </carousel>
-	  </div>
+  	<div class="row">
+  		<div class="col-xs-12">
+  			<h1 class="section-header">More Than Just Facts and Figures</h1>
+  			<p>Students thrive under a teacher who really cares. Food tastes better when served with a warm smile. We work hard to spotlight more than the dry numbers, but the people that make up our featured organizations. Example spotlights:</p>
+  		</div>
+  	</div>
+    <div class="row">
+    	<div class="col-xs-12">
+    		<carousel interval="myInterval">
+		        <slide ng-repeat="slide in slides" active="slide.active" style="height: 400px" ng-click="/signup">
+			        <!-- active property becomes true when the slide is active  -->
+			        <a ng-href="/signup">
+				      <img ng-src="{{slide.image}}" style="margin:auto;">
+				      <div class="carousel-caption">
+				        <p class="topCaption">{{slide.text}}</p>
+			            <p class="bottomCaption">{{slide.description}}</p>
+			            <img src="/assets/images/playButton.png">
+				      </div>
+			        </a>
+		        </slide>
+		    </carousel>
+    	</div>
+    </div>
   </div>
-
 </section>
 <section class="tips">
   <div class="container">
     <div class="row">
-       <h1 class="section-header">Insider Tips From Local Parents</h1>
-
-		<a ng-href="http://butterbeanapp.tumblr.com/post/98189446810/ultimate-shaved-ice-guide" target="_blank" class="col-md-4 suggestionSec">
-			<div class="img1"></div>
-			<div class="suggestionNameHolder">
-				<p>7 Delightfully Clever DIY Birthday Party Favors</p>
-			</div>
-		</a>
-
-		<a ng-href="http://butterbeanapp.tumblr.com/post/98189468610/16-birthday-cupcake-alternatives" target="_blank" class="col-md-4 suggestionSec">
-			<div class="img2"></div>
-			<div class="suggestionNameHolder">
-				<p>Ultimate Shaved Ice Guide</p>
-			</div>
-		</a>
-
-		<a ng-href="http://butterbeanapp.tumblr.com/post/98186633430/7-delightfully-clever-diy-birthday-party-favors" target="_blank" class="col-md-4 suggestionSec">
-			<div class="img3"></div>
-			<div class="suggestionNameHolder">
-				<p>16 Birthday Cupcake Alternatives</p>
-			</div>
-		</a>
-
+    	<div class="col-xs-12">
+    		<h1 class="section-header">Insider Tips From Local Parents</h1>
+    	</div>
+        <div class="col-sm-4 col-xs-12">
+        	<a ng-href="http://butterbeanapp.tumblr.com/post/98189446810/ultimate-shaved-ice-guide" target="_blank" class="suggestionSec">
+				<div class="img1"></div>
+				<div class="suggestionNameHolder">
+					<p>7 Delightfully Clever DIY Birthday Party Favors</p>
+				</div>
+			</a>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+        	<a ng-href="http://butterbeanapp.tumblr.com/post/98189468610/16-birthday-cupcake-alternatives" target="_blank" class="suggestionSec">
+				<div class="img2"></div>
+				<div class="suggestionNameHolder">
+					<p>Ultimate Shaved Ice Guide</p>
+				</div>
+			</a>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+        	<a ng-href="http://butterbeanapp.tumblr.com/post/98186633430/7-delightfully-clever-diy-birthday-party-favors" target="_blank" class="suggestionSec">
+				<div class="img3"></div>
+				<div class="suggestionNameHolder">
+					<p>16 Birthday Cupcake Alternatives</p>
+				</div>
+			</a>
+        </div>
 	</div>
   </div>
 </section>
 <section class="bottom-btn-section">
 	<div class="container">
-		<h1>Start Exploring. Become a Member.</h1>
-		<a href="/signup">Sign Up</a>
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>Start exploring. Become a member today.</h1>
+				<a href="/signup">Sign Up</a>
+			</div>
+		</div>
 	</div>
 </section>
-
-
-
-
-
 

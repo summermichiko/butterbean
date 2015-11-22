@@ -1,54 +1,36 @@
-/* style for the landing page - main.html */
-
-// .fixed {
-//     position: fixed;
-//     top: 0;
-//     width: 100%;
-//     left: 0;
-//     z-index: 100;
-//     border-top: 0;
-// }
-
 .activeClass {
-  background-color: #c7ae20;
+  background-color: #2D6AB3;
 }
 
-.container {
-	width: 1080px;
-}
-
-/* ICON/CATEGORY SECTION */
+// icon/category section
 .tabs {
-	background-color: #e0c61a;
+	background-color: #124D92;
 }
 
-.categoryMenu {
+.category-menu {
 	padding-left: 0;
 	padding-right: 0;
-}
-
-.tabs ul {
 	margin-bottom: 0;
 }
 
 .icon {
 	display: inline-block;
 	font-size: 16px;
-	width: 171px;
+	width: 100%;
 	text-align: center;
-	font-family: Lato;
+	font-family: Open Sans;
+	height: 155px;
 	padding-top: 15px;
-	padding-bottom: 30px;
 	color: #fff;
 	font-weight: 300;
 }
 
 .icon:hover {
-	background-color: #c7ae20;
+	background-color: #2D6AB3;
 }
 
 .icon:active {
-	background-color: #fff;
+	background-color: #2D6AB3;
 }
 
 .icon img {
@@ -60,30 +42,27 @@
 	margin-bottom: -10px;
 }
 
-/* SELECT SECTION */
-/* general style for the inline form */
-
+// select section
+// general style for the inline form
 .main {
-	background-color: #eee;
-	height: 240px;
-	margin-bottom: 60px;
+	background-color: #fff;
+	height: 176px;
 }
 
 .nl-form {
 	line-height: 1.5em;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	font-family: Amatic SC;
-	font-size: 75px;
-	line-height: 1.2em;
+	font-family: Open Sans;
+	font-size: 32px;
 	color: #545454;
 }
 
 .nl-form select {
 	border: none;
 	background: transparent;
-	font-family: Amatic SC;
-	font-size: 75px;
+	font-family: Open Sans;
+	font-size: 32px;
 	display: inline-block;
 	padding: 0;
 	margin: 0;
@@ -91,19 +70,13 @@
 	-moz-appearance: none;
 }
 
-.nl-form input:focus {
+.nl-form select:focus {
 	outline: none;
 }
 
-/* custom field (drop-down, text element) styling  */
-// .nl-field {
-// 	display: inline-block;
-// 	position: relative;
-// }
-
-// .nl-field.nl-field-open {
-// 	z-index: 10000;
-// }
+.nl-form input:focus {
+	outline: none;
+}
 
 /* the toggle is the visible part in the form */
 .nl-field-toggle,
@@ -111,218 +84,51 @@
 .nl-form select  {
 	line-height: inherit;
 	display: inline-block;
-	color: #31989a;
+	color: #e5a464;
 	cursor: pointer;
-	border-bottom: 1px dashed #31989a;
+	border-bottom: 1px dashed #e5a464;
 }
 
-// .nl-field ul {
-// 	position: absolute;
-// 	visibility: hidden;
-// 	background: #76C3BD;
-// 	left: -0.5em;
-// 	top: 50%;
-// 	font-size: 50%;
-// 	opacity: 0;
-// 	-webkit-transform: translateY(-40%) scale(0.9);
-// 	-moz-transform: translateY(-40%) scale(0.9);
-// 	transform: translateY(-40%) scale(0.9);
-// 	-webkit-transition: visibility 0s 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-// 	-moz-transition: visibility 0s 0.3s, opacity 0.3s, -moz-transform 0.3s;
-// 	transition: visibility 0s 0.3s, opacity 0.3s, transform 0.3s;
-// }
-
-/* drop-down list / text element */
-// .nl-field option {
-// 	position: absolute;
-// 	visibility: hidden;
-// 	background: red;
-// 	left: -0.5em;
-// 	top: 50%;
-// 	font-size: 80%;
-// 	opacity: 0;
-// 	-webkit-transform: translateY(-40%) scale(0.9);
-// 	-moz-transform: translateY(-40%) scale(0.9);
-// 	transform: translateY(-40%) scale(0.9);
-// 	-webkit-transition: visibility 0s 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-// 	-moz-transition: visibility 0s 0.3s, opacity 0.3s, -moz-transform 0.3s;
-// 	transition: visibility 0s 0.3s, opacity 0.3s, transform 0.3s;
-// }
-
-// .nl-field.nl-field-open ul {
-// 	visibility: visible;
-// 	opacity: 1;
-// 	-webkit-transform: translateY(-50%) scale(1);
-// 	-moz-transform: translateY(-50%) scale(1);
-// 	transform: translateY(-50%) scale(1);
-// 	-webkit-transition: visibility 0s 0s, opacity 0.3s, -webkit-transform 0.3s;
-// 	-moz-transition: visibility 0s 0s, opacity 0.3s, -moz-transform 0.3s;
-// 	transition: visibility 0s 0s, opacity 0.3s, transform 0.3s;
-// }
-
-// .nl-field ul li {
-// 	color: #fff;
-// 	position: relative;
-// }
-
-// .nl-dd ul li {
-// 	padding: 0 1.5em 0 0.5em;
-// 	cursor: pointer;
-// 	white-space: nowrap;
-// }
-
-// .nl-dd ul li.nl-dd-checked {
-// 	color: #478982;
-// }
-
-// .no-touch .nl-dd ul li:hover {
-// 	background: rgba(0,0,0,0.05);
-// }
-
-// .no-touch .nl-dd ul li:hover:active {
-// 	color: #478982;
-// }
-
-// /* icons for some elements */
-// .nl-dd ul li.nl-dd-checked:before,
-// .nl-submit:before,
-// .nl-field-go:before {
-// 	font-family: 'nlicons';
-// 	speak: none;
-// 	font-style: normal;
-// 	font-weight: normal;
-// 	font-variant: normal;
-// 	text-transform: none;
-// 	-webkit-font-smoothing: antialiased;
-// }
-
-// .nl-dd ul li.nl-dd-checked:before {
-// 	content: "\e000";
-// 	position: absolute;
-// 	right: 1em;
-// 	font-size: 50%;
-// 	line-height: 3;
-// }
-
-// .nl-ti-text ul {
-// 	min-width: 8em;
-// }
-
-// .nl-ti-text ul li.nl-ti-input input {
-// 	width: 100%;
-// 	padding: 0.2em 2em 0.2em 0.5em;
-// 	border-bottom: none;
-// 	color: #fff;
-// }
-
-// .nl-form .nl-field-go {
-// 	position: absolute;
-// 	right: 0;
-// 	top: 0;
-// 	height: 100%;
-// 	cursor: pointer;
-// 	background: rgba(0,0,0,0.1);
-// 	width: 1.8em;
-// 	text-align: center;
-// 	color: transparent;
-// }
-
-// .nl-field-go:before {
-// 	content: "\e001";
-// 	font-size: 75%;
-// 	color: #fff;
-// 	width: 100%;
-// 	line-height: 2.5;
-// 	display: block;
-// }
-
-// /* custom placeholder color */
-// input::-webkit-input-placeholder {
-// 	color: rgba(255,255,255,0.8);
-// }
-
-// input:active::-webkit-input-placeholder ,
-// input:focus::-webkit-input-placeholder {
-// 	color: rgba(255,255,255,0.2);
-// }
-
-// input::-moz-placeholder {
-// 	color: rgba(255,255,255,0.8);
-// }
-
-// input:active::-moz-placeholder,
-// input:focus::-moz-placeholder {
-// 	color: rgba(255,255,255,0.2);
-// }
-
-// input:-ms-input-placeholder {
-// 	color: rgba(255,255,255,0.8);
-// }
-
-// input:active::-ms-input-placeholder ,
-// input:focus::-ms-input-placeholder {
-// 	color: rgba(255,255,255,0.2);
-// }
-
-// /* example field below text input */
-// .nl-ti-text ul li.nl-ti-example {
-// 	font-size: 40%;
-// 	font-style: italic;
-// 	font-weight: 400;
-// 	padding: 0.4em 1em;
-// 	color: rgba(0,0,0,0.2);
-// 	border-top: 1px dashed rgba(255,255,255,0.7);
-// }
-
-// .nl-ti-text ul li.nl-ti-example em {
-// 	color: #fff
-// }
-
-// /* overlay becomes visible when a field is opened */
-// .nl-overlay {
-// 	position: fixed;
-// 	top: 0;
-// 	left: 0;
-// 	width: 100%;
-// 	height: 100%;
-// 	background: rgba(0,0,0,0.5);
-// 	opacity: 0;
-// 	z-index: 9999;
-// 	visibility: hidden;
-// 	-webkit-transition: visibility 0s 0.3s, opacity 0.3s;
-// 	-moz-transition: visibility 0s 0.3s, opacity 0.3s;
-// 	transition: visibility 0s 0.3s, opacity 0.3s;
-// }
-
-// .nl-field.nl-field-open ~ .nl-overlay {
-// 	opacity: 1;
-// 	visibility: visible;
-// 	-webkit-transition-delay: 0s;
-// 	-moz-transition-delay: 0s;
-// 	transition-delay: 0s;
-// }
-
-@media screen and (max-width: 45em) {
-	.nl-form {
-		font-size: 3em;
-	}
+// list item section
+.item-list-container {
+	background-color: #eee;
+	padding-top: 60px;
+	padding-bottom: 40px;
 }
 
-@media screen and (max-width: 25em) {
-	.nl-form {
-		font-size: 2em;
-	}
+.name-holder {
+	width: 100%;
+	height: 125px;
+	background-color: #fff;
+}
+
+.item-wrapper:hover {
+	text-decoration: none;
 }
 
 //SCROLL BUTTON
-#scrollArea img {
-	width: 35px;
-	height: 35px;
-	display: block;
-	float: right;
-	margin-bottom: 30px;
-	cursor: pointer;
-	margin-right: 30px;
+// #scrollArea img {
+// 	width: 35px;
+// 	height: 35px;
+// 	display: block;
+// 	float: right;
+// 	margin-bottom: 30px;
+// 	cursor: pointer;
+// 	margin-right: 30px;
+// }
+
+@media screen and (max-width: 767px) {
+	.tabs .col-xs-12 {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.icon {
+		height: 125px;
+		padding-top: 0px;
+	}
+	.main {
+		height: 276px;
+	}
 }
 
 

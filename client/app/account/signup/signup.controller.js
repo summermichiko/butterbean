@@ -15,8 +15,7 @@ angular.module('tripplannerAngularApp')
           password: $scope.user.password
         })
         .then( function() {
-          // Account created, redirect to home
-          $location.path('/');
+          $location.path('/planner');
         })
         .catch( function(err) {
           err = err.data;

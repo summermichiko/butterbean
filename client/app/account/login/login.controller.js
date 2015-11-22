@@ -14,7 +14,6 @@ angular.module('tripplannerAngularApp')
           password: $scope.user.password
         })
         .then( function() {
-          // Logged in, redirect to home
           $location.path('/planner');
         })
         .catch( function(err) {
