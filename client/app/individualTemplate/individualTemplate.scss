@@ -1,5 +1,5 @@
 div, p, h1, h2, h3, h4, h5, a, button, body, header, footer, section {
-	font-family: Open Sans;
+	font-family: Source Sans Pro;
 }
 p {
 	font-size: 16px;
@@ -15,7 +15,11 @@ h4 {
 	color: #82888a;
 }
 .orange-bold-text {
-	color: #e5a464;
+	color: #ec3345;
+	font-weight: 700 !important;
+}
+.grey-bold-text {
+	color: #545454;
 	font-weight: 700 !important;
 }
 .bold-text {
@@ -81,7 +85,7 @@ h4 {
 	display: block;
 	border-radius: 2px;
 	font-size: 20px;
-	background-color: #124D92;
+	background-color: #ec3345;
 	opacity: 0.88;
 	border: none;
 	font-weight: 300;
@@ -112,6 +116,10 @@ h4 {
 
 .yelp-link-box {
 	padding-left: 0;
+}
+
+.minor-CTA a {
+	color: #ec3345;
 }
 
 // main content section

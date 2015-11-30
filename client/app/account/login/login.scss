@@ -16,67 +16,68 @@ $btnGithubBackgroundHighlight:      #ccc;
 }
 
 .topLeftLogo img {
-	height: 60px;
+	height: 50px;
+	margin-top: 20px;
 }
 
 // Social buttons
-.btn-facebook {
-  @include button-variant($btnText, $btnFacebookBackgroundHighlight, $btnFacebookBackgroundHighlight);
-	font-family: Lato;
-	font-weight: 300;
-	font-size: 16px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	border-radius: 0;
-	border: none;
-}
+// .btn-facebook {
+//   @include button-variant($btnText, $btnFacebookBackgroundHighlight, $btnFacebookBackgroundHighlight);
+// 	font-family: Source Sans Pro;
+// 	font-weight: 300;
+// 	font-size: 16px;
+// 	padding-top: 10px;
+// 	padding-bottom: 10px;
+// 	margin-top: 5px;
+// 	margin-bottom: 5px;
+// 	border-radius: 0;
+// 	border: none;
+// }
 
-.btn-twitter {
-  @include button-variant($btnText, $btnTwitterBackground, $btnTwitterBackgroundHighlight);
-	font-family: Lato;
-	font-weight: 300;
-	font-size: 16px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	border-radius: 0;
-	border: none;
-}
+// .btn-twitter {
+//   @include button-variant($btnText, $btnTwitterBackground, $btnTwitterBackgroundHighlight);
+// 	font-family: Source Sans Pro;
+// 	font-weight: 300;
+// 	font-size: 16px;
+// 	padding-top: 10px;
+// 	padding-bottom: 10px;
+// 	margin-top: 5px;
+// 	margin-bottom: 5px;
+// 	border-radius: 0;
+// 	border: none;
+// }
 
-.btn-google-plus {
-  @include button-variant($btnText, $btnGooglePlusBackground, $btnGooglePlusBackgroundHighlight);
-	font-family: Lato;
-	font-weight: 300;
-	font-size: 16px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	border-radius: 0;
-	border: none;
-}
+// .btn-google-plus {
+//   @include button-variant($btnText, $btnGooglePlusBackground, $btnGooglePlusBackgroundHighlight);
+// 	font-family: Source Sans Pro;
+// 	font-weight: 300;
+// 	font-size: 16px;
+// 	padding-top: 10px;
+// 	padding-bottom: 10px;
+// 	margin-top: 5px;
+// 	margin-bottom: 5px;
+// 	border-radius: 0;
+// 	border: none;
+// }
 
 // OR LINE
-.orLine p {
-	font-family: Lato;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	color: #545454;
-	font-weight: 300;
-	font-size: 16px;
-	margin-top: 15px;
-	margin-bottom: 20px;
-}
+// .orLine p {
+// 	font-family: Source Sans Pro;
+// 	display: block;
+// 	margin-left: auto;
+// 	margin-right: auto;
+// 	text-align: center;
+// 	color: #545454;
+// 	font-weight: 300;
+// 	font-size: 16px;
+// 	margin-top: 15px;
+// 	margin-bottom: 20px;
+// }
 
 // INPUTS
 .form-group input {
 	border-radius: 0;
-	font-family: Lato;
+	font-family: Source Sans Pro;
 	font-size: 16px;
 	font-weight: 300;
 }
@@ -84,7 +85,7 @@ $btnGithubBackgroundHighlight:      #ccc;
 
 // LOGIN BUTTON
 .btn-login {
-	font-family: Lato;
+	font-family: Source Sans Pro;
 	font-weight: 300;
 	font-size: 16px;
 	padding-top: 10px;
@@ -92,15 +93,15 @@ $btnGithubBackgroundHighlight:      #ccc;
 	margin-top: -15px;
 	margin-bottom: 5px;
 	text-align: center;
-	width: 350px;
+	width: 100%;
 	color: #fff;
-	background-color: #e0c61a;
 	border-radius: 0;
+	background-color: #ec3345;
 }
 
 // SIGNUP BUTTON
 .btn-signup {
-	font-family: Lato;
+	font-family: Source Sans Pro;
 	font-weight: 300;
 	font-size: 16px;
 	padding-top: 10px;
@@ -110,13 +111,13 @@ $btnGithubBackgroundHighlight:      #ccc;
 	text-align: center;
 	width: 350px;
 	color: #fff;
-	background-color: #e0c61a;
+	background-color: #ec3345;
 	border-radius: 0;
 }
 
 // PASSWORD CHANGE BUTTON
 .btn-changePassword {
-	font-family: Lato;
+	font-family: Source Sans Pro;
 	font-weight: 300;
 	font-size: 16px;
 	padding-top: 10px;
@@ -132,7 +133,7 @@ $btnGithubBackgroundHighlight:      #ccc;
 
 // TEXT UNDER LOGIN
 .notMemberSection p {
-	font-family: Lato;
+	font-family: Source Sans Pro;
 	display: block;
 	margin-right: 10px;
 	text-align: center;
@@ -143,9 +144,9 @@ $btnGithubBackgroundHighlight:      #ccc;
 }
 
 .notMemberSection a {
-	font-family: Lato;
+	font-family: Source Sans Pro;
 	display: block;
-	color: #e0c61a;
+	color: #ec3345;
 	font-weight: 300;
 	font-size: 16px;
 	margin-bottom: 60px;
@@ -156,7 +157,7 @@ $btnGithubBackgroundHighlight:      #ccc;
 }
 
 .alreadyMemberSection p {
-	font-family: Lato;
+	font-family: Source Sans Pro;
 	display: block;
 	margin-right: 10px;
 	color: #545454;
@@ -166,9 +167,9 @@ $btnGithubBackgroundHighlight:      #ccc;
 }
 
 .alreadyMemberSection a {
-	font-family: Lato;
+	font-family: Source Sans Pro;
 	display: block;
-	color: #e0c61a;
+	color: #ec3345;
 	font-weight: 300;
 	font-size: 16px;
 	margin-bottom: 60px;
@@ -185,7 +186,7 @@ $btnGithubBackgroundHighlight:      #ccc;
 }
 
 .passwordFirstInput h1 {
-	font-family: Lato;
+	font-family: Source Sans Pro;
 	font-size: 30px;
 	font-weight: 300;
 	text-align: center;

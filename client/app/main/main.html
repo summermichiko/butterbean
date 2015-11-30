@@ -1,139 +1,95 @@
 <header>
 	<section class="hero">
-		<img ng-src="../assets/images/butterbean-white-logo.png">
+		<img ng-src="../assets/images/butterbeanTransparent.png" class="logoImage">
 		<div class="container">
-		  <div class="row">
-		    <div class="col-xs-12 text-center inner">
-		      <h1 class="main-header">Discover amazing activities<br>with your kids</h1>
-		      <a href="/signup" class="top-link">Join today</a>
-		      <a href="/login" class="bottom-link">or Sign In</a>
-		    </div>
-		  </div>
+			<div class="row">
+				<div class="col-xs-12 text-center inner">
+					<h1 class="main-header">Create Awesome Memories</h1>
+					<h4 class="main-subHeader">Discover Hawaii’s coolest activities and services for your kids.</h4>
+					<a href="/signup" class="top-link">Join Today</a>
+					<a href="/login" class="bottom-link">or Sign In</a>
+				</div>
+			</div>
 		</div>
 	</section>
 </header>
 <section class="icons">
-  <div class="container">
-	  <div class="row">
-	  	<div class="col-xs-12">
-	  		<h1 class="section-header">Find In-Depth Profiles</h1>
-	  	</div>
-	    <div>
-	      <div class="col-sm-2 col-xs-12 icon-list">
-	        <div>
-	          <i><img ng-src="../assets/images/school-icon-circle.png"></i>
-	        </div>
-	        <h2>Schools</h2>
-	        <p>preschools, elementary, middle and high schools</p>
-	      </div>
-	      <div class="col-sm-2 col-xs-12 icon-list">
-	        <div>
-	          <i><img ng-src="../assets/images/active-icon-circle.png"></i>
-	        </div>
-	        <h2>Outdoor + Active</h2>
-	        <p>hikes, beachs, parks and paid attractions</p>
-	      </div>
-	      <div class="col-sm-2 col-xs-12 icon-list">
-	        <div>
-	          <i><img ng-src="../assets/images/food-icon-circle.png"></i>
-	        </div>
-	        <h2>Food</h2>
-	        <p>restaurants, bakeries, and food trucks</p>
-	      </div>
-	      <div class="col-sm-2 col-xs-12 icon-list">
-	        <div>
-	          <i><img ng-src="../assets/images/music-icon-circle.png"></i>
-	        </div>
-	        <h2>Enrichment + Learning</h2>
-	        <p>sports, language, and music programs</p>
-	      </div>
-	      <div class="col-sm-2 col-xs-12 icon-list">
-	        <div>
-	          <i><img ng-src="../assets/images/museum-icon-circle.png"></i>
-	        </div>
-	        <h2>Culture + History</h2>
-	        <p>museums, animal exhibits, cultural activities</p>
-	      </div>
-	      <div class="col-sm-2 col-xs-12 icon-list">
-	        <div>
-				<i><img ng-src="../assets/images/health-icon-circle.png"></i>
-	        </div>
-	        <h2>Health + Wellness</h2>
-	        <p>pediatricians, dentists, therapists, and health services</p>
-	      </div>
-	      <div class="clearfix"></div>
-	    </div>
-	  </div>
-  </div>
-</section>
-<section class="video-pattern">
-  <div class="container video-section">
-  	<div class="row">
-  		<div class="col-xs-12">
-  			<h1 class="section-header">More Than Just Facts and Figures</h1>
-  			<p>Students thrive under a teacher who really cares. Food tastes better when served with a warm smile. We work hard to spotlight more than the dry numbers, but the people that make up our featured organizations. Example spotlights:</p>
-  		</div>
-  	</div>
-    <div class="row">
-    	<div class="col-xs-12">
-    		<carousel interval="myInterval">
-		        <slide ng-repeat="slide in slides" active="slide.active" style="height: 400px" ng-click="/signup">
-			        <!-- active property becomes true when the slide is active  -->
-			        <a ng-href="/signup">
-				      <img ng-src="{{slide.image}}" style="margin:auto;">
-				      <div class="carousel-caption">
-				        <p class="topCaption">{{slide.text}}</p>
-			            <p class="bottomCaption">{{slide.description}}</p>
-			            <img src="/assets/images/playButton.png">
-				      </div>
-			        </a>
-		        </slide>
-		    </carousel>
-    	</div>
-    </div>
-  </div>
-</section>
-<section class="tips">
-  <div class="container">
-    <div class="row">
-    	<div class="col-xs-12">
-    		<h1 class="section-header">Insider Tips From Local Parents</h1>
-    	</div>
-        <div class="col-sm-4 col-xs-12">
-        	<a ng-href="http://butterbeanapp.tumblr.com/post/98189446810/ultimate-shaved-ice-guide" target="_blank" class="suggestionSec">
-				<div class="img1"></div>
-				<div class="suggestionNameHolder">
-					<p>7 Delightfully Clever DIY Birthday Party Favors</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h3 class="section-header">Explore our in-depth profiles</h3>
+				<h4 class="section-subHeader icon-subHeader">From kid-friendly restaurants to the most qualified physicians, quickly find the perfect fit for your family.</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2 col-sm-offset-2 col-xs-12 col-xs-offset-0 icon-list">
+				<div>
+					<i><img ng-src="../assets/images/schoolIcon.png"></i>
 				</div>
-			</a>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-        	<a ng-href="http://butterbeanapp.tumblr.com/post/98189468610/16-birthday-cupcake-alternatives" target="_blank" class="suggestionSec">
-				<div class="img2"></div>
-				<div class="suggestionNameHolder">
-					<p>Ultimate Shaved Ice Guide</p>
+				<h2>Schools</h2>
+				<p>preschools, elementary, middle and high schools</p>
+			</div>
+			<div class="col-sm-2 col-sm-offset-0 col-xs-12 col-xs-offset-0 icon-list">
+				<div>
+					<i><img ng-src="../assets/images/outdoorIcon.png"></i>
 				</div>
-			</a>
-        </div>
-        <div class="col-sm-4 col-xs-12">
-        	<a ng-href="http://butterbeanapp.tumblr.com/post/98186633430/7-delightfully-clever-diy-birthday-party-favors" target="_blank" class="suggestionSec">
-				<div class="img3"></div>
-				<div class="suggestionNameHolder">
-					<p>16 Birthday Cupcake Alternatives</p>
+				<h2>Outdoor + Active</h2>
+				<p>hikes, beachs, parks and paid attractions</p>
+			</div>
+			<div class="col-sm-2 col-sm-offset-0 col-xs-12 col-xs-offset-0 icon-list">
+				<div>
+					<i><img ng-src="../assets/images/foodIcon.png"></i>
 				</div>
-			</a>
-        </div>
+				<h2>Food</h2>
+				<p>restaurants, bakeries, and food trucks</p>
+			</div>
+			<div class="col-sm-2 col-sm-offset-0 col-xs-12 col-xs-offset-0 icon-list">
+				<div>
+					<i><img ng-src="../assets/images/enrichmentIcon.png"></i>
+				</div>
+				<h2>Enrichment + Learning</h2>
+				<p>sports, language, and music programs</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2 col-sm-offset-2 col-xs-12 col-xs-offset-0 icon-list">
+				<div>
+					<i><img ng-src="../assets/images/cultureIcon.png"></i>
+				</div>
+				<h2>Culture + History</h2>
+				<p>museums, animal exhibits, cultural activities</p>
+			</div>
+			<div class="col-sm-2 col-sm-offset-0 col-xs-12 col-xs-offset-0 icon-list">
+				<div>
+					<i><img ng-src="../assets/images/healthIcon.png"></i>
+				</div>
+				<h2>Health + Wellness</h2>
+				<p>pediatricians, dentists, therapists, and health services</p>
+			</div>
+			<div class="col-sm-2 col-sm-offset-0 col-xs-12 col-xs-offset-0 icon-list">
+				<div>
+					<i><img ng-src="../assets/images/getawaysIcon.png"></i>
+				</div>
+				<h2>Getaways</h2>
+				<p>hotels, airlines, and rental car agencies</p>
+			</div>
+			<div class="col-sm-2 col-sm-offset-0 col-xs-12 col-xs-offset-0 icon-list">
+				<div>
+					<i><img ng-src="../assets/images/shoppingIcon.png"></i>
+				</div>
+				<h2>Shopping</h2>
+				<p>clothing, toys, and games</p>
+			</div>
+		</div>
 	</div>
-  </div>
 </section>
 <section class="bottom-btn-section">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<h1>Start exploring. Become a member today.</h1>
-				<a href="/signup">Sign Up</a>
+				<h3 class="section-header">Start exploring today, it's free.</h3>
+				<a href="/signup" class="top-link">Sign Up</a>
 			</div>
 		</div>
 	</div>
 </section>
-

@@ -1,11 +1,11 @@
 <div class="contact-info">
-	<p class="orange-bold-text">Street Address</p>
+	<p class="grey-bold-text">Street Address</p>
 	<p>{{ objectInside.dataFromDatabase.address }}</p>
 	<p>{{ objectInside.dataFromDatabase.address2 }} {{ objectInside.dataFromDatabase.zip }}</p>
 	<p>{{ objectInside.dataFromDatabase.telephone }}</p>
 </div>
 <div class="school-info" ng-show="objectInside.dataFromDatabase.student">
-	<p class="orange-bold-text">School Information</p>
+	<p class="grey-bold-text">School Information</p>
 	<p>Grade Levels: {{objectInside.dataFromDatabase.gradeLevels}}</p>
 	<p>Enrollment: {{objectInside.dataFromDatabase.enrollment}}</p>
 	<p>Gender: {{objectInside.dataFromDatabase.gender}}</p>
@@ -13,7 +13,7 @@
 	<p>Boarding: {{objectInside.dataFromDatabase.boarding}}</p>
 </div>
 <div class="yelp-info" ng-show="objectInside.dataFromYelp">
-	<p class="orange-bold-text">Yelp Summary</p>
+	<p class="grey-bold-text">Yelp Summary</p>
 	<p>Rating: {{objectInside.dataFromYelp.rating}}</p>
 	<!-- <p><a href="{{objectInside.dataFromYelp.url}}" target="_blank" style="color: #124D92;">Yelp Page</a></p> -->
 </div>

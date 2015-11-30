@@ -6,44 +6,14 @@
 }
 
 footer {
-	background-color: #545454;
-	height: 225px;
+	background-color: #565a5c;
 	width: 100%;
 	font-family: Open Sans;
-	padding-top: 30px;
 }
 
-footer img {
-	width: 200px;
-}
-
-.footer-header {
-	font-weight: 700;
-}
-
-footer ul {
-	margin: 0;
-	padding: 0;
-}
-
-footer li {
-	text-decoration: none;
-	list-style-type: none;
-}
-
-footer a:hover {
-	text-decoration: none;
-	color: #333;
-}
-
-footer a {
-	font-weight: 300;
-	font-size: 16px;
-	color: #333;
-}
-
-@media (max-width: 991px) {
-	.footerLogo {
-		text-align: center;
-	}
+.footerCopy {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #fff;
 }

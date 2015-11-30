@@ -1,10 +1,10 @@
 .activeClass {
-  background-color: #2D6AB3;
+  background-color: #eee;
 }
 
 // icon/category section
 .tabs {
-	background-color: #124D92;
+	background-color: #bfbfbf;
 }
 
 .category-menu {
@@ -18,28 +18,32 @@
 	font-size: 16px;
 	width: 100%;
 	text-align: center;
-	font-family: Open Sans;
+	font-family: Source Sans Pro;
 	height: 155px;
-	padding-top: 15px;
+	padding-top: 40px;
 	color: #fff;
 	font-weight: 300;
 }
 
 .icon:hover {
-	background-color: #2D6AB3;
+	background-color: #eee;
 }
 
 .icon:active {
-	background-color: #2D6AB3;
+	background-color: #eee;
 }
 
 .icon img {
-	height: 80px;
-	width: 80px;
+	height: 50px;
+	width: 50px;
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
-	margin-bottom: -10px;
+	margin-bottom: 0;
+}
+
+.icon p {
+	color: #545454;
 }
 
 // select section
@@ -53,7 +57,7 @@
 	line-height: 1.5em;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	font-family: Open Sans;
+	font-family: Source Sans Pro;
 	font-size: 32px;
 	color: #545454;
 }
@@ -61,7 +65,7 @@
 .nl-form select {
 	border: none;
 	background: transparent;
-	font-family: Open Sans;
+	font-family: Source Sans Pro;
 	font-size: 32px;
 	display: inline-block;
 	padding: 0;
@@ -84,9 +88,9 @@
 .nl-form select  {
 	line-height: inherit;
 	display: inline-block;
-	color: #e5a464;
+	color: #ec3345;
 	cursor: pointer;
-	border-bottom: 1px dashed #e5a464;
+	border-bottom: 1px dashed #ec3345;
 }
 
 // list item section
@@ -106,17 +110,6 @@
 	text-decoration: none;
 }
 
-//SCROLL BUTTON
-// #scrollArea img {
-// 	width: 35px;
-// 	height: 35px;
-// 	display: block;
-// 	float: right;
-// 	margin-bottom: 30px;
-// 	cursor: pointer;
-// 	margin-right: 30px;
-// }
-
 @media screen and (max-width: 767px) {
 	.tabs .col-xs-12 {
 		padding-left: 0;
@@ -124,10 +117,10 @@
 	}
 	.icon {
 		height: 125px;
-		padding-top: 0px;
+		padding-top: 25px;
 	}
 	.main {
-		height: 276px;
+		height: 246px;
 	}
 }
 
